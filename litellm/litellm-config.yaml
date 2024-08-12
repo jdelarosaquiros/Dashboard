@@ -1,0 +1,16 @@
+model_list:
+  - model_name: Llama 3.1
+    litellm_params:
+      model: openai/NousResearch/Meta-Llama-3-8B-Instruct
+      api_base: http://149.165.173.177:80/v1
+      api_key: "DIGLoM2l3W9vFFGJ95jS2dOS+ab4Rkfmjb2sj7kDXHXilOFNPIA697pABNEsNDTdfXZg3bpCrSA+a85LDb67HhTZ4qmCSLuk3ZTE2sE3JSk="
+  - model_name: Domain Specific
+    litellm_params:
+      model: openai/NousResearch/Meta-Llama-3-8B-Instruct # openai/Henrychur/MMed-Llama-3-8B 
+      api_base: http://149.165.173.177:80/v1 # http://149.165.154.50:80/v1
+      api_key: "DIGLoM2l3W9vFFGJ95jS2dOS+ab4Rkfmjb2sj7kDXHXilOFNPIA697pABNEsNDTdfXZg3bpCrSA+a85LDb67HhTZ4qmCSLuk3ZTE2sE3JSk="
+general_settings:
+  master_key: sk-1234
+litellm_settings:
+  callbacks: custom_callbacks.proxy_handler_instance
+  set_verbose: true      # Switch off Debug Logging, ensure your logs do not have any debugging on

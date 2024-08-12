@@ -89,7 +89,7 @@ function ResetPassword() {
               },
             })}
             aria-invalid={!!errors.password}
-            className="webkit-dark-styles peer block w-full appearance-none rounded-md border border-gray-300 bg-transparent px-3.5 pb-3.5 pt-4 text-sm text-gray-900 focus:border-green-500 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-green-500"
+            className="webkit-dark-styles peer block w-full appearance-none rounded-md border border-gray-300 bg-transparent px-3.5 pb-3.5 pt-4 text-sm text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-pink-500"
             placeholder=" "
           />
           <label
@@ -116,7 +116,7 @@ function ResetPassword() {
               validate: (value) => value === password || localize('com_auth_password_not_match'),
             })}
             aria-invalid={!!errors.confirm_password}
-            className="webkit-dark-styles peer block w-full appearance-none rounded-md border border-gray-300 bg-transparent px-3.5 pb-3.5 pt-4 text-sm text-gray-900 focus:border-green-500 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-green-500"
+            className="webkit-dark-styles peer block w-full appearance-none rounded-md border border-gray-300 bg-transparent px-3.5 pb-3.5 pt-4 text-sm text-gray-900 focus:border-green-500 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-pink-500"
             placeholder=" "
           />
           <label
@@ -147,7 +147,7 @@ function ResetPassword() {
           disabled={!!errors.password || !!errors.confirm_password}
           type="submit"
           aria-label={localize('com_auth_submit_registration')}
-          className="w-full transform rounded-md bg-green-500 px-4 py-3 tracking-wide text-white transition-all duration-300 hover:bg-green-550 focus:bg-green-550 focus:outline-none"
+          className="w-full transform rounded-md bg-blue-500 dark:bg-pink-700 px-4 py-3 tracking-wide text-white transition-all duration-300 hover:bg-blue-500 dark:hover:bg-pink-500 focus:bg-blue-550 dark:focus:bg-pink-500 focus:outline-none"
         >
           {localize('com_auth_continue')}
         </button>

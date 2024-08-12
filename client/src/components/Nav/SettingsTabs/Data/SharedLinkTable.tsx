@@ -85,7 +85,7 @@ function ShareLinkRow({ sharedLink }: { sharedLink: TSharedLink }) {
   return (
     <tr
       key={sharedLink.conversationId}
-      className="border-b border-gray-200 text-sm font-normal dark:border-white/10"
+      className="border-b border-gray-200 text-sm font-normal dark:border-pink-600"
     >
       <td
         className={cn(
@@ -100,7 +100,7 @@ function ShareLinkRow({ sharedLink }: { sharedLink: TSharedLink }) {
       </td>
       <td className="p-3">
         <div className="flex justify-between">
-          <div className={cn('flex justify-start dark:text-gray-200', isDeleting && 'opacity-50')}>
+          <div className={cn('flex justify-start dark:text-gray-20', isDeleting && 'opacity-50')}>
             {new Date(sharedLink.createdAt).toLocaleDateString('en-US', {
               month: 'long',
               day: 'numeric',
@@ -147,19 +147,19 @@ export default function ShareLinkTable({ className }: { className?: string }) {
 
   const sharedLinks = useMemo(() => data?.pages.flatMap((page) => page.sharedLinks) || [], [data]);
   const classProp: { className?: string } = {
-    className: 'p-1 hover:text-black dark:hover:text-white',
+    className: 'p-1 hover:text-white dark:hover:text-white',
   };
   if (className) {
     classProp.className = className;
   }
 
   if (isLoading) {
-    return <Spinner className="m-1 mx-auto mb-4 h-4 w-4 text-black dark:text-white" />;
+    return <Spinner className="m-1 mx-auto mb-4 h-4 w-4 text-white dark:text-white" />;
   }
 
   if (isError) {
     return (
-      <div className="rounded-md border border-red-500 bg-red-500/10 px-3 py-2 text-sm text-gray-600 dark:text-gray-200">
+      <div className="rounded-md border border-red-500 bg-red-500/10 px-3 py-2 text-sm text-gray-600 dark:text-gray-20">
         {localize('com_ui_share_retrieve_error')}
       </div>
     );
@@ -179,7 +179,7 @@ export default function ShareLinkTable({ className }: { className?: string }) {
     >
       <table className="table-fixed text-left">
         <thead className="sticky top-0 bg-white dark:bg-gray-700">
-          <tr className="border-b border-gray-200 text-sm font-semibold text-gray-500 dark:border-white/10 dark:text-gray-200">
+          <tr className="border-b border-gray-200 text-sm font-semibold text-gray-500 dark:border-pink-600 dark:text-gray-20">
             <th className="p-3">{localize('com_nav_shared_links_name')}</th>
             <th className="p-3">{localize('com_nav_shared_links_date_shared')}</th>
           </tr>
@@ -191,7 +191,7 @@ export default function ShareLinkTable({ className }: { className?: string }) {
         </tbody>
       </table>
       {(isFetchingNextPage || showLoading) && (
-        <Spinner className={cn('m-1 mx-auto mb-4 h-4 w-4 text-black dark:text-white')} />
+        <Spinner className={cn('m-1 mx-auto mb-4 h-4 w-4 text-white dark:text-white')} />
       )}
     </div>
   );

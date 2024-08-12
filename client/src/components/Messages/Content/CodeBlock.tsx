@@ -22,7 +22,7 @@ const CodeBar: React.FC<CodeBarProps> = React.memo(({ lang, codeRef, error, plug
   const localize = useLocalize();
   const [isCopied, setIsCopied] = useState(false);
   return (
-    <div className="relative flex items-center rounded-tl-md rounded-tr-md bg-gray-700 px-4 py-2 font-sans text-xs text-gray-200 dark:bg-gray-700">
+    <div className="relative flex items-center rounded-tl-md rounded-tr-md bg-gray-700 px-4 py-2 font-sans text-xs text-gray-100 dark:bg-gray-700">
       <span className="">{lang}</span>
       {plugin ? (
         <InfoIcon className="ml-auto flex h-4 w-4 gap-2 text-white/50" />

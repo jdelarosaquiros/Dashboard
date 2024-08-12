@@ -78,7 +78,7 @@ const MenuItem: FC<MenuItemProps> = ({
                     'invisible flex gap-x-1 group-hover:visible',
                     selected ? 'visible' : '',
                     expiryTime
-                      ? 'w-full rounded-lg p-2 hover:bg-gray-200 dark:hover:bg-gray-900'
+                      ? 'w-full rounded-lg p-2 hover:bg-blue-200 dark:hover:bg-pink-700'
                       : '',
                   )}
                   onClick={(e) => {

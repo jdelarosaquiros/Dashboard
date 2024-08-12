@@ -91,7 +91,7 @@ export default function PanelFileCell({ row }: { row: Row<TFile> }) {
     return (
       <div
         onClick={handleFileClick}
-        className="flex cursor-pointer gap-2 rounded-md dark:hover:bg-gray-700"
+        className="flex cursor-pointer gap-2 rounded-md dark:hover:bg-pink-700"
       >
         <ImagePreview
           url={file.filepath}
@@ -107,7 +107,7 @@ export default function PanelFileCell({ row }: { row: Row<TFile> }) {
   return (
     <div
       onClick={handleFileClick}
-      className="flex cursor-pointer gap-2 rounded-md dark:hover:bg-gray-700"
+      className="flex cursor-pointer gap-2 rounded-md dark:hover:bg-pink-700"
     >
       {fileType && <FilePreview fileType={fileType} className="relative" file={file} />}
       <span className="self-center truncate">{file.filename}</span>

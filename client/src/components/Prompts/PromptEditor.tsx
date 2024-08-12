@@ -32,7 +32,7 @@ const PromptEditor: React.FC<Props> = ({ name, isEditing, setIsEditing }) => {
 
   return (
     <div>
-      <h2 className="flex items-center justify-between rounded-t-lg border border-gray-300 py-2 pl-4 text-base font-semibold dark:border-gray-600 dark:text-gray-200">
+      <h2 className="flex items-center justify-between rounded-t-lg border border-gray-300 py-2 pl-4 text-base font-semibold dark:border-pink-600 dark:text-gray-20">
         {localize('com_ui_prompt_text')}
         <div className="flex flex-row gap-6">
           {editorMode === PromptsEditorMode.ADVANCED && (
@@ -50,13 +50,13 @@ const PromptEditor: React.FC<Props> = ({ name, isEditing, setIsEditing }) => {
       </h2>
       <div
         className={cn(
-          'group relative min-h-32 rounded-b-lg border border-gray-300 p-4 transition-all duration-150 hover:opacity-90 dark:border-gray-600',
-          { 'cursor-pointer hover:bg-gray-100/50 dark:hover:bg-gray-100/10': !isEditing },
+          'group relative min-h-32 rounded-b-lg border border-gray-300 p-4 transition-all duration-150 hover:opacity-90 dark:border-pink-600',
+          { 'cursor-pointer hover:bg-gray-100/50 dark:hover:bg-pink-100/10': !isEditing },
         )}
         onClick={() => !isEditing && setIsEditing(true)}
       >
         {!isEditing && (
-          <EditIcon className="icon-xl absolute inset-0 m-auto hidden opacity-25 group-hover:block dark:text-gray-200" />
+          <EditIcon className="icon-xl absolute inset-0 m-auto hidden opacity-25 group-hover:block dark:text-gray-20" />
         )}
         <Controller
           name={name}
@@ -65,12 +65,12 @@ const PromptEditor: React.FC<Props> = ({ name, isEditing, setIsEditing }) => {
             isEditing ? (
               <TextareaAutosize
                 {...field}
-                className="w-full rounded border border-gray-300 bg-transparent px-2 py-1 focus:outline-none dark:border-gray-600 dark:text-gray-200"
+                className="w-full rounded border border-gray-300 bg-transparent px-2 py-1 focus:outline-none dark:border-pink-600 dark:text-gray-20"
                 minRows={3}
                 onBlur={() => setIsEditing(false)}
               />
             ) : (
-              <span className="block break-words px-2 py-1 dark:text-gray-200">{field.value}</span>
+              <span className="block break-words px-2 py-1 dark:text-gray-20">{field.value}</span>
             )
           }
         />

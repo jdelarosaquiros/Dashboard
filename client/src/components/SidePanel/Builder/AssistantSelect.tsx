@@ -218,22 +218,22 @@ export default function AssistantSelect({
       containerClassName="flex-grow"
       searchClassName="dark:from-gray-850"
       searchPlaceholder={localize('com_assistants_search_name')}
-      optionsClass="hover:bg-gray-20/50 dark:border-gray-700"
-      optionsListClass="rounded-lg shadow-lg dark:bg-gray-850 dark:border-gray-700 dark:last:border"
+      optionsClass="hover:bg-gray-20/50 dark:border-pink-700"
+      optionsListClass="rounded-lg shadow-lg dark:bg-gray-850 dark:border-pink-700 dark:last:border"
       currentValueClass={cn(
         'text-md font-semibold text-gray-900 dark:text-white',
         value === '' ? 'text-gray-500' : '',
       )}
       className={cn(
-        'mt-1 rounded-md dark:border-gray-700 dark:bg-gray-850',
+        'mt-1 rounded-md dark:border-pink-700 dark:bg-gray-850',
         'z-50 flex h-[40px] w-full flex-none items-center justify-center px-4 hover:cursor-pointer hover:border-green-500 focus:border-gray-400',
       )}
       renderOption={() => (
         <span className="flex items-center gap-1.5 truncate">
-          <span className="absolute inset-y-0 left-0 flex items-center pl-2 text-gray-800 dark:text-gray-100">
+          <span className="absolute inset-y-0 left-0 flex items-center pl-2 text-gray-800 dark:text-gray-20">
             <Plus className="w-[16px]" />
           </span>
-          <span className={cn('ml-4 flex h-6 items-center gap-1 text-gray-800 dark:text-gray-100')}>
+          <span className={cn('ml-4 flex h-6 items-center gap-1 text-gray-800 dark:text-gray-20')}>
             {createAssistant}
           </span>
         </span>

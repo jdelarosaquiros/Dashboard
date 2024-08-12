@@ -32,7 +32,7 @@ export default function ToolPopover({
       >
         <div tabIndex={-1}>
           <div className="bg-token-surface-primary max-w-sm rounded-md p-2 shadow-[0_0_24px_0_rgba(0,0,0,0.05),inset_0_0.5px_0_0_rgba(0,0,0,0.05),0_2px_8px_0_rgba(0,0,0,0.05)]">
-            <div className="mb-2 text-sm font-medium dark:text-gray-100">
+            <div className="mb-2 text-sm font-medium dark:text-gray-20">
               {domain
                 ? localize('com_assistants_domain_info', domain)
                 : localize('com_assistants_function_use', function_name)}
@@ -44,7 +44,7 @@ export default function ToolPopover({
             </div>
             {output && (
               <>
-                <div className="mb-2 mt-2 text-sm font-medium dark:text-gray-100">
+                <div className="mb-2 mt-2 text-sm font-medium dark:text-gray-20">
                   {localize('com_ui_result')}
                 </div>
                 <div className="bg-token-surface-secondary text-token-text-primary dark rounded-md text-xs">

@@ -69,7 +69,7 @@ const DeleteAccount = ({ disabled = false }: { title?: string; disabled?: boolea
               {localize('com_nav_delete_account_confirm')}
             </DialogTitle>
           </DialogHeader>
-          <div className="mb-20 text-sm text-black dark:text-white">
+          <div className="mb-20 text-sm text-white dark:text-white">
             <ul>
               <li>{localize('com_nav_delete_warning')}</li>
               <li>{localize('com_nav_delete_data_info')}</li>
@@ -113,7 +113,7 @@ const renderInput = (
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void,
 ) => (
   <div className="mb-4">
-    <label className="mb-1 block text-sm font-medium text-black dark:text-white">{label}</label>
+    <label className="mb-1 block text-sm font-medium text-white dark:text-white">{label}</label>
     <Input
       id={id}
       onChange={onChange}

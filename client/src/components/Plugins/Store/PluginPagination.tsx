@@ -21,15 +21,15 @@ const PluginPagination: React.FC<TPluginPaginationProps> = ({
   };
 
   return (
-    <div className="flex gap-2 text-sm text-black/60 dark:text-white/70">
+    <div className="flex gap-2 text-sm text-white/60 dark:text-white/70">
       <div
         role="button"
         aria-label="Previous page"
         onClick={() => handlePageChange(currentPage - 1)}
         className={`flex cursor-default items-center text-sm ${
           currentPage === 1
-            ? 'text-black/70 opacity-50 dark:text-white/70'
-            : 'text-black/70 hover:text-black/50 dark:text-white/70 dark:hover:text-white/50'
+            ? 'text-white/70 opacity-50 dark:text-white/70'
+            : 'text-white/70 hover:text-white/50 dark:text-white/70 dark:hover:text-white/50'
         }`}
         style={{ userSelect: 'none' }}
       >
@@ -56,7 +56,7 @@ const PluginPagination: React.FC<TPluginPaginationProps> = ({
           className={`flex h-5 w-5 items-center justify-center text-sm ${
             currentPage === page
               ? 'text-blue-600 hover:text-blue-600 dark:text-blue-600 dark:hover:text-blue-600'
-              : 'text-black/70 hover:text-black/50 dark:text-white/70 dark:hover:text-white/50'
+              : 'text-white/70 hover:text-white/50 dark:text-white/70 dark:hover:text-white/50'
           }`}
           style={{ userSelect: 'none' }}
           onClick={() => onChangePage(page)}
@@ -70,8 +70,8 @@ const PluginPagination: React.FC<TPluginPaginationProps> = ({
         onClick={() => handlePageChange(currentPage + 1)}
         className={`flex cursor-default items-center text-sm ${
           currentPage === maxPage
-            ? 'text-black/70 opacity-50 dark:text-white/70'
-            : 'text-black/70 hover:text-black/50 dark:text-white/70 dark:hover:text-white/50'
+            ? 'text-white/70 opacity-50 dark:text-white/70'
+            : 'text-white/70 hover:text-white/50 dark:text-white/70 dark:hover:text-white/50'
         }`}
         style={{ userSelect: 'none' }}
       >

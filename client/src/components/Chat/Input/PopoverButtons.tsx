@@ -122,8 +122,8 @@ export default function PopoverButtons({
             type="button"
             className={cn(
               button.buttonClass,
-              'border-2 border-gray-300/50 focus:ring-1 focus:ring-green-500/90 dark:border-gray-500/50 dark:focus:ring-green-500',
-              'ml-1 h-full bg-transparent px-2 py-1 text-xs font-medium font-normal text-black hover:bg-gray-100 hover:text-black dark:bg-transparent dark:text-white dark:hover:bg-gray-600 dark:hover:text-white',
+              'border-2 border-gray-300/50 focus:ring-1 focus:ring-green-500/90 dark:border-pink-500/50 dark:focus:ring-green-500',
+              'ml-1 h-full bg-transparent px-2 py-1 text-xs font-medium font-normal text-white hover:bg-gray-100 hover:text-white dark:bg-transparent dark:text-white dark:hover:bg-pink-600 dark:hover:text-white',
               buttonClass ?? '',
             )}
             onClick={button.handler}
@@ -141,8 +141,8 @@ export default function PopoverButtons({
               type="button"
               className={cn(
                 button.buttonClass,
-                'flex justify-center border-2 border-gray-300/50 focus:ring-1 focus:ring-green-500/90 dark:border-gray-500/50 dark:focus:ring-green-500',
-                'h-full w-full bg-transparent px-2 py-1 text-xs font-medium font-normal text-black hover:bg-gray-100 hover:text-black dark:bg-transparent dark:text-white dark:hover:bg-gray-600 dark:hover:text-white',
+                'flex justify-center border-2 border-gray-300/50 focus:ring-1 focus:ring-green-500/90 dark:border-pink-500/50 dark:focus:ring-green-500',
+                'h-full w-full bg-transparent px-2 py-1 text-xs font-medium font-normal text-white hover:bg-gray-100 hover:text-white dark:bg-transparent dark:text-white dark:hover:bg-pink-600 dark:hover:text-white',
                 buttonClass ?? '',
               )}
               onClick={button.handler}

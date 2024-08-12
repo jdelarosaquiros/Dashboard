@@ -20,7 +20,7 @@ const PromptVersions = ({
   const localize = useLocalize();
   return (
     <>
-      <h2 className="mb-4 flex gap-2 text-base font-semibold dark:text-gray-200">
+      <h2 className="mb-4 flex gap-2 text-base font-semibold dark:text-gray-20">
         <Layers3 className="icon-lg text-green-500" />
         {localize('com_ui_versions')}
       </h2>
@@ -39,12 +39,12 @@ const PromptVersions = ({
             <li
               key={index}
               className={cn(
-                'relative cursor-pointer rounded-lg border p-4 dark:border-gray-600 dark:bg-transparent',
+                'relative cursor-pointer rounded-lg border p-4 dark:border-pink-600 dark:bg-transparent',
                 index === selectionIndex ? 'bg-gray-100 dark:bg-gray-700' : 'bg-white',
               )}
               onClick={() => setSelectionIndex(index)}
             >
-              <p className="font-bold dark:text-gray-200">
+              <p className="font-bold dark:text-gray-20">
                 {localize('com_ui_version_var', `${prompts.length - index}`)}
               </p>
               <p className="absolute right-4 top-5 whitespace-nowrap text-xs text-gray-600 dark:text-gray-400">

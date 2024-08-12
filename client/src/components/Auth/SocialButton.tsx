@@ -31,10 +31,10 @@ const SocialButton = ({ id, enabled, serverDomain, oauthPath, Icon, label }) => 
 
   const getButtonStyles = () => {
     // Define Tailwind CSS classes based on state
-    const baseStyles = 'border border-solid border-gray-300 dark:border-gray-600 transition-colors';
+    const baseStyles = 'border border-solid border-blue-300 dark:border-pink-600 transition-colors';
 
-    const pressedStyles = 'bg-blue-200 border-blue-200 dark:bg-blue-900 dark:border-blue-600';
-    const hoverStyles = 'bg-gray-100 dark:bg-gray-700';
+    const pressedStyles = 'bg-blue-200 border-blue-200 dark:bg-gray-900 dark:border-pink-600';
+    const hoverStyles = 'bg-blue-100 dark:bg-gray-700';
 
     return `${baseStyles} ${
       isPressed && activeButton === id ? pressedStyles : isHovered ? hoverStyles : ''
@@ -45,7 +45,7 @@ const SocialButton = ({ id, enabled, serverDomain, oauthPath, Icon, label }) => 
     <div className="mt-2 flex gap-x-2">
       <a
         aria-label={`${label}`}
-        className={`${getButtonStyles()} flex w-full items-center space-x-3 rounded-md px-5 py-3 text-black transition-colors dark:text-white`}
+        className={`${getButtonStyles()} flex w-full items-center space-x-3 rounded-md px-5 py-3 text-white transition-colors dark:text-white`}
         href={`${serverDomain}/oauth/${oauthPath}`}
         data-testid={id}
         onMouseEnter={handleMouseEnter}

@@ -26,7 +26,7 @@ const TabsTrigger = React.forwardRef<
 >(({ className = '', ...props }, ref) => (
   <TabsPrimitive.Trigger
     className={cn(
-      'inline-flex min-w-[100px] items-center justify-center rounded-[0.185rem] px-3 py-1.5  text-sm font-medium text-gray-700 transition-all  disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-white data-[state=active]:text-gray-800 data-[state=active]:shadow-sm dark:text-gray-200 dark:data-[state=active]:bg-gray-700 dark:data-[state=active]:text-gray-200',
+      'inline-flex min-w-[100px] items-center justify-center rounded-[0.185rem] px-3 py-1.5  text-sm font-medium text-gray-700 transition-all  disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-white data-[state=active]:text-gray-800 data-[state=active]:shadow-sm dark:text-gray-20 dark:data-[state=active]:bg-gray-700 dark:data-[state=active]:text-gray-100',
       className,
     )}
     {...props}
@@ -40,7 +40,7 @@ const TabsContent = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof TabsPrimitive.Content>
 >(({ className = '', ...props }, ref) => (
   <TabsPrimitive.Content
-    className={cn('mt-2 rounded-md border border-gray-200 p-6 dark:border-gray-700', className)}
+    className={cn('mt-2 rounded-md border border-gray-200 p-6 dark:border-pink-700', className)}
     {...props}
     ref={ref}
   />

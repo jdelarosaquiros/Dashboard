@@ -49,7 +49,7 @@ function ToolItem({ tool, onAddTool, onRemoveTool, isInstalled }: ToolItemProps)
             </button>
           ) : (
             <button
-              className="btn relative bg-gray-300 hover:bg-gray-400 dark:bg-gray-50 dark:hover:bg-gray-200"
+              className="btn relative bg-gray-300 hover:bg-gray-400 dark:bg-gray-50 dark:hover:bg-pink-200"
               onClick={handleClick}
               aria-label={`${localize('com_nav_tool_remove')} ${tool.name}`}
             >

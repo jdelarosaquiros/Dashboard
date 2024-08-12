@@ -127,7 +127,7 @@ const AdminSettings = () => {
           <span className="hidden sm:flex">{localize('com_ui_admin')}</span>
         </Button>
       </OGDialogTrigger>
-      <OGDialogContent className="bg-white dark:border-gray-700 dark:bg-gray-850 dark:text-gray-300">
+      <OGDialogContent className="bg-white dark:border-pink-700 dark:bg-gray-850 dark:text-gray-300">
         <OGDialogTitle>{`${localize('com_ui_admin_settings')} - ${localize(
           'com_ui_prompts',
         )}`}</OGDialogTitle>

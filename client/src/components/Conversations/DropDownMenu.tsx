@@ -40,7 +40,7 @@ const DropDownMenu: FC<DropDownMenuProps> = ({
                 <button type="button" className={className}>
                   {cloneElement(icon, {
                     className:
-                      'h-[18px] w-[18px] flex-shrink-0 text-gray-500 hover:text-gray-400 dark:text-gray-300 dark:hover:text-gray-400',
+                      'h-[18px] w-[18px] flex-shrink-0 text-gray-500 hover:text-gray-400 dark:text-gray-20 dark:hover:text-gray-20',
                   })}
                 </button>
               </TooltipTrigger>
@@ -57,7 +57,7 @@ const DropDownMenu: FC<DropDownMenuProps> = ({
           align="start"
           className={cn(
             'popover radix-side-bottom:animate-slideUpAndFade radix-side-left:animate-slideRightAndFade radix-side-right:animate-slideLeftAndFade radix-side-top:animate-slideDownAndFade overflow-hidden rounded-lg shadow-lg',
-            'border border-gray-200 bg-white dark:border-gray-600 dark:bg-gray-700 dark:text-white',
+            'border border-gray-200 bg-white dark:border-pink-600 dark:bg-gray-700 dark:text-white',
             'flex min-w-[200px] max-w-xs flex-wrap',
           )}
         >

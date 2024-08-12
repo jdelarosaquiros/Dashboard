@@ -73,7 +73,7 @@ export default function DashGroupItem({
   return (
     <div
       className={cn(
-        'w-100 mx-2 my-3 flex cursor-pointer flex-row rounded-md border-0 bg-white p-4 transition-all duration-300 ease-in-out hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600',
+        'w-100 mx-2 my-3 flex cursor-pointer flex-row rounded-md border-0 bg-white p-4 transition-all duration-300 ease-in-out hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-pink-600',
         params.promptId === group._id && 'bg-gray-100/50 dark:bg-gray-600 ',
       )}
       onClick={() => {
@@ -127,7 +127,7 @@ export default function DashGroupItem({
               <div className="flex w-full justify-between">
                 <div className="flex flex-row gap-2">
                   <CategoryIcon category={group.category ?? ''} className="icon-md" />
-                  <h3 className="break-word text-balance text-sm font-semibold text-gray-800 dark:text-gray-200">
+                  <h3 className="break-word text-balance text-sm font-semibold text-gray-800 dark:text-gray-20">
                     {group.name}
                   </h3>
                 </div>
@@ -139,7 +139,7 @@ export default function DashGroupItem({
                         <DropdownMenuTrigger asChild>
                           <Button
                             variant="outline"
-                            className="h-7 w-7 p-0 hover:bg-gray-200 dark:bg-gray-800/50 dark:text-gray-400 dark:hover:border-gray-400 dark:focus:border-gray-500"
+                            className="h-7 w-7 p-0 hover:bg-gray-200 dark:bg-gray-800/50 dark:text-gray-400 dark:hover:border-pink-400 dark:hover:border-pink-500"
                           >
                             <MenuIcon className="icon-md dark:text-gray-300" />
                           </Button>
@@ -163,7 +163,7 @@ export default function DashGroupItem({
                           <Button
                             variant="outline"
                             className={cn(
-                              'h-7 w-7 p-0 hover:bg-gray-200  dark:bg-gray-800/50 dark:text-gray-400 dark:hover:border-gray-400 dark:focus:border-gray-500',
+                              'h-7 w-7 p-0 hover:bg-gray-200  dark:bg-gray-800/50 dark:text-gray-400 dark:hover:border-pink-400 dark:hover:border-pink-500',
                             )}
                             onClick={(e) => {
                               e.stopPropagation();

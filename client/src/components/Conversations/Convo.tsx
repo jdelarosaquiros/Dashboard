@@ -149,11 +149,11 @@ export default function Conversation({ conversation, retainView, toggleNav, isLa
               renaming={renaming}
               title={title}
               appendLabel={true}
-              className="group m-1.5 mt-[3.5px] flex w-full cursor-pointer items-center gap-2 rounded p-2.5 text-sm hover:bg-gray-200 focus-visible:bg-gray-200 focus-visible:outline-0 radix-disabled:pointer-events-none radix-disabled:opacity-50 dark:hover:bg-gray-600 dark:focus-visible:bg-gray-600"
+              className="group m-1.5 mt-[3.5px] flex w-full cursor-pointer items-center gap-2 rounded p-2.5 text-sm hover:bg-gray-200 focus-visible:bg-gray-200 focus-visible:outline-0 radix-disabled:pointer-events-none radix-disabled:opacity-50 dark:hover:bg-pink-600 dark:focus-visible:bg-pink-600"
             />
           </DropDownMenu>
           <ArchiveButton
-            className="z-50 hover:text-black dark:hover:text-white"
+            className="z-50 hover:text-white dark:hover:text-white"
             conversationId={conversationId}
             retainView={retainView}
             shouldArchive={true}
@@ -168,7 +168,7 @@ export default function Conversation({ conversation, retainView, toggleNav, isLa
         className={cn(
           isActiveConvo || isPopoverActive
             ? 'group relative mt-2 flex cursor-pointer items-center gap-2 break-all rounded-lg bg-gray-200 px-2 py-2 active:opacity-50 dark:bg-gray-700'
-            : 'group relative mt-2 flex grow cursor-pointer items-center gap-2 overflow-hidden whitespace-nowrap break-all rounded-lg px-2 py-2 hover:bg-gray-200 active:opacity-50 dark:hover:bg-gray-700',
+            : 'group relative mt-2 flex grow cursor-pointer items-center gap-2 overflow-hidden whitespace-nowrap break-all rounded-lg px-2 py-2 hover:bg-gray-200 active:opacity-50 dark:hover:bg-pink-700',
           !isActiveConvo && !renaming ? 'peer-hover:bg-gray-200 dark:peer-hover:bg-gray-800' : '',
         )}
         title={title}

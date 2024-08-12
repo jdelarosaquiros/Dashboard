@@ -45,7 +45,7 @@ export default function OptionsPopover({
 
   const localize = useLocalize();
   const cardStyle =
-    'shadow-xl rounded-md min-w-[75px] font-normal bg-white border-black/10 border dark:bg-gray-700 text-black dark:text-white';
+    'shadow-xl rounded-md min-w-[75px] font-normal bg-white border-black/10 border dark:bg-gray-700 text-white dark:text-white';
 
   if (!visible) {
     return null;
@@ -59,14 +59,14 @@ export default function OptionsPopover({
             className={cn(
               cardStyle,
               'dark:bg-gray-700',
-              'border-d-0 flex w-full flex-col overflow-hidden rounded-none border-s-0 border-t bg-white px-0 pb-[10px] dark:border-white/10 md:rounded-md md:border lg:w-[736px]',
+              'border-d-0 flex w-full flex-col overflow-hidden rounded-none border-s-0 border-t bg-white px-0 pb-[10px] dark:border-pink-600 md:rounded-md md:border lg:w-[736px]',
             )}
           >
-            <div className="flex w-full items-center bg-gray-50 px-2 py-2 dark:bg-gray-700">
+            <div className="flex w-full items-center bg-blue-50 px-2 py-2 dark:bg-gray-700">
               {presetsDisabled ? null : (
                 <Button
                   type="button"
-                  className="h-auto w-[150px] justify-start rounded-md border border-gray-300/50 bg-transparent px-2 py-1 text-xs font-medium font-normal text-black hover:bg-gray-100 hover:text-black focus:ring-1 focus:ring-green-500/90 dark:border-gray-500/50 dark:bg-transparent dark:text-white dark:hover:bg-gray-600 dark:focus:ring-white"
+                  className="h-auto w-[150px] justify-start rounded-md border border-gray-300/50 bg-transparent px-2 py-1 text-xs font-medium font-normal text-white hover:bg-gray-100 hover:text-white focus:ring-1 focus:ring-green-500/90 dark:border-pink-500/50 dark:bg-transparent dark:text-white dark:hover:bg-pink-600 dark:focus:ring-pink-600"
                   onClick={saveAsPreset}
                 >
                   <Save className="mr-1 w-[14px]" />
@@ -77,7 +77,7 @@ export default function OptionsPopover({
               <Button
                 type="button"
                 className={cn(
-                  'ml-auto h-auto bg-transparent px-3 py-2 text-xs font-medium font-normal text-black hover:bg-gray-100 hover:text-black dark:bg-transparent dark:text-white dark:hover:bg-gray-700 dark:hover:text-white',
+                  'ml-auto h-auto bg-transparent px-3 py-2 text-xs font-medium font-normal text-white hover:bg-blue-100 hover:text-white dark:bg-transparent dark:text-white dark:hover:bg-pink-700 dark:hover:text-white',
                   removeFocusOutlines,
                 )}
                 onClick={closePopover}

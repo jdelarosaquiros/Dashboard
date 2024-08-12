@@ -71,13 +71,13 @@ const PromptName: React.FC<Props> = ({ name, onSave }) => {
             onBlur={handleBlur}
             onKeyDown={handleKeyDown}
             ref={inputRef}
-            className="mr-2 w-56 rounded-md border bg-transparent p-2 focus:outline-none dark:border-gray-600 md:w-auto"
+            className="mr-2 w-56 rounded-md border bg-transparent p-2 focus:outline-none dark:border-pink-600 md:w-auto"
             autoFocus={true}
           />
           <button
             type="button"
             onClick={handleSaveClick}
-            className="rounded p-2 hover:bg-gray-300/50 dark:hover:bg-gray-700"
+            className="rounded p-2 hover:bg-gray-300/50 dark:hover:bg-pink-700"
           >
             <SaveIcon className="icon-md" size="1.2em" />
           </button>
@@ -88,7 +88,7 @@ const PromptName: React.FC<Props> = ({ name, onSave }) => {
           <button
             type="button"
             onClick={handleEditClick}
-            className="rounded p-2 hover:bg-gray-300/50 dark:hover:bg-gray-700"
+            className="rounded p-2 hover:bg-gray-300/50 dark:hover:bg-pink-700"
           >
             <EditIcon className="icon-md" />
           </button>

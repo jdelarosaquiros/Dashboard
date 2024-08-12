@@ -150,7 +150,7 @@ const Nav = ({ navVisible, setNavVisible }) => {
                       />
                       {(isFetchingNextPage || showLoading) && (
                         <Spinner
-                          className={cn('m-1 mx-auto mb-4 h-4 w-4 text-black dark:text-white')}
+                          className={cn('m-1 mx-auto mb-4 h-4 w-4 text-white dark:text-white')}
                         />
                       )}
                     </div>

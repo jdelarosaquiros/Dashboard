@@ -97,8 +97,8 @@ const MenuItem: FC<MenuItemProps> = ({
       <div
         role="menuitem"
         className={cn(
-          'group m-1.5 flex max-h-[40px] cursor-pointer gap-2 rounded px-5 py-2.5 !pr-3 text-sm !opacity-100 hover:bg-black/5 radix-disabled:pointer-events-none radix-disabled:opacity-50 dark:hover:bg-gray-600',
-          'focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900',
+          'group m-1.5 flex max-h-[40px] cursor-pointer gap-2 rounded px-5 py-2.5 !pr-3 text-sm !opacity-100 hover:bg-black/5 radix-disabled:pointer-events-none radix-disabled:opacity-50 dark:hover:bg-pink-600',
+          'focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 dark:focus:ring-pink-400 dark:focus:ring-offset-pink-900',
         )}
         tabIndex={1}
         {...rest}
@@ -130,15 +130,15 @@ const MenuItem: FC<MenuItemProps> = ({
           </div>
           <div className="flex items-center gap-2">
             {userProvidesKey ? (
-              <div className="text-token-text-primary" key={`set-key-${endpoint}`}>
+              <div className="text-pink-800" key={`set-key-${endpoint}`}>
                 <button
                   className={cn(
                     'invisible flex gap-x-1 group-hover:visible',
                     selected ? 'visible' : '',
                     expiryTime
-                      ? 'w-full rounded-lg p-2 hover:text-gray-400 dark:hover:text-gray-400'
+                      ? 'w-full rounded-lg p-2 hover:text-gray-400 dark:hover:text-gray-20'
                       : '',
-                    'focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900',
+                    'focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 dark:focus:ring-pink-400 dark:focus:ring-offset-pink-900',
                   )}
                   onClick={(e) => {
                     e.preventDefault();

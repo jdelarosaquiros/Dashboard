@@ -77,10 +77,10 @@ export default function DataTable<TData, TValue>({ columns, data }: DataTablePro
           placeholder={localize('com_files_filter')}
           value={(table.getColumn('filename')?.getFilterValue() as string) ?? ''}
           onChange={(event) => table.getColumn('filename')?.setFilterValue(event.target.value)}
-          className="max-w-xs dark:border-gray-700"
+          className="max-w-xs dark:border-pink-700"
         />
       </div>
-      <div className="overflow-y-auto rounded-md border border-black/10 dark:border-white/10">
+      <div className="overflow-y-auto rounded-md border border-black/10 dark:border-pink-600">
         <Table className="border-separate border-spacing-0 ">
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup, index) => (
@@ -90,7 +90,7 @@ export default function DataTable<TData, TValue>({ columns, data }: DataTablePro
                     <TableHead
                       key={header.id}
                       style={{ width: index === 0 ? '75%' : '25%' }}
-                      className="sticky top-0 h-auto border-b border-black/10 bg-white py-1 text-left font-medium text-gray-700 dark:border-white/10 dark:bg-gray-800 dark:text-gray-100"
+                      className="sticky top-0 h-auto border-b border-black/10 bg-white py-1 text-left font-medium text-gray-700 dark:border-pink-600 dark:bg-gray-800 dark:text-gray-20"
                     >
                       {header.isPlaceholder
                         ? null
@@ -107,7 +107,7 @@ export default function DataTable<TData, TValue>({ columns, data }: DataTablePro
                 <TableRow
                   key={row.id}
                   data-state={row.getIsSelected() && 'selected'}
-                  className="border-b border-black/10 text-left text-gray-600 dark:border-white/10 dark:text-gray-300 [tr:last-child_&]:border-b-0"
+                  className="border-b border-black/10 text-left text-gray-600 dark:border-pink-600 dark:text-gray-300 [tr:last-child_&]:border-b-0"
                 >
                   {row.getVisibleCells().map((cell) => (
                     <TableCell

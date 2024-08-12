@@ -10,19 +10,22 @@ export const partialTypes = ['text/x-'];
 
 const textDocument = {
   paths: TextPaths,
-  fill: '#FF5588',
+  // fill: '#FF5588',
+  fill: '#75cac1',
   title: 'Document',
 };
 
 const spreadsheet = {
   paths: SheetPaths,
-  fill: '#10A37F',
+  // fill: '#10A37F',
+  fill: '#75cac1',
   title: 'Spreadsheet',
 };
 
 const codeFile = {
   paths: CodePaths,
-  fill: '#FF6E3C',
+  // fill: '#FF6E3C',
+    fill: '#75cac1',
   // TODO: make this dynamic to the language
   title: 'Code',
 };
@@ -31,7 +34,8 @@ export const fileTypes = {
   /* Category matches */
   file: {
     paths: FilePaths,
-    fill: '#0000FF',
+    // fill: '#0000FF',
+    fill: '#75cac1',
     title: 'File',
   },
   text: textDocument,

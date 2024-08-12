@@ -27,8 +27,8 @@ const PresetsMenu: FC = () => {
       <Trigger asChild>
         <button
           className={cn(
-            'pointer-cursor relative flex flex-col rounded-md border border-gray-100 bg-white text-left focus:outline-none focus:ring-0 focus:ring-offset-0 dark:border-gray-700 dark:bg-gray-800 sm:text-sm',
-            'hover:bg-gray-50 radix-state-open:bg-gray-50 dark:hover:bg-gray-700 dark:radix-state-open:bg-gray-700',
+            'pointer-cursor relative flex flex-col rounded-md border border-blue-100 bg-white text-left focus:outline-none focus:ring-0 focus:ring-offset-0 dark:border-pink-700 dark:bg-gray-800 sm:text-sm',
+            'hover:bg-blue-50 radix-state-open:bg-blue-50 dark:hover:bg-pink-700 dark:radix-state-open:bg-pink-700',
             'z-50 flex h-[40px] min-w-4 flex-none items-center justify-center px-3 focus:ring-0 focus:ring-offset-0',
           )}
           id="presets-button"
@@ -52,7 +52,7 @@ const PresetsMenu: FC = () => {
           <Content
             side="bottom"
             align="center"
-            className="mt-2 max-h-[495px] overflow-x-hidden rounded-lg border border-gray-200 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-700 dark:text-white md:min-w-[400px]"
+            className="mt-2 max-h-[495px] overflow-x-hidden rounded-lg border border-blue-200 bg-white shadow-lg dark:border-pink-700 dark:bg-gray-700 dark:text-white md:min-w-[400px]"
           >
             <PresetItems
               presets={presets}

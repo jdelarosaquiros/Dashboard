@@ -65,11 +65,13 @@ export default function AudioRecorder({
       return <ListeningIcon className="stroke-red-500" />;
     }
     if (isLoading) {
-      return <Spinner className="stroke-gray-700 dark:stroke-gray-300" />;
+      return <Spinner className="stroke-blue-700 dark:stroke-pink-300" />;
     }
-    return <ListeningIcon className="stroke-gray-700 dark:stroke-gray-300" />;
+    return <ListeningIcon className="stroke-blue-700 dark:stroke-gray-300" />;
   };
 
+  // Previous ClassName
+  // className="absolute bottom-1.5 right-12 flex h-[30px] w-[30px] items-center justify-center rounded-lg p-0.5 transition-colors hover:bg-blue-200 dark:hover:bg-pink-700 md:bottom-3 md:right-12"
   return (
     <TooltipProvider delayDuration={250}>
       <Tooltip>
@@ -77,7 +79,7 @@ export default function AudioRecorder({
           <button
             onClick={isListening ? handleStopRecording : handleStartRecording}
             disabled={disabled}
-            className="absolute bottom-1.5 right-12 flex h-[30px] w-[30px] items-center justify-center rounded-lg p-0.5 transition-colors hover:bg-gray-200 dark:hover:bg-gray-700 md:bottom-3 md:right-12"
+            className="absolute bottom-1.5 right-12 flex h-[30px] w-[30px] items-center justify-center rounded-lg p-0.5 transition-colors md:bottom-3 md:right-12"
             type="button"
           >
             {renderIcon()}

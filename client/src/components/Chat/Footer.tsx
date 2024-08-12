@@ -14,7 +14,7 @@ export default function Footer({ className }: { className?: string }) {
 
   const privacyPolicyRender = privacyPolicy?.externalUrl && (
     <a
-      className=" text-gray-600 underline dark:text-gray-300"
+      className=" text-gray-600 underline dark:text-blue-600"
       href={privacyPolicy.externalUrl}
       target={privacyPolicy.openNewTab ? '_blank' : undefined}
       rel="noreferrer"
@@ -25,7 +25,7 @@ export default function Footer({ className }: { className?: string }) {
 
   const termsOfServiceRender = termsOfService?.externalUrl && (
     <a
-      className=" text-gray-600 underline dark:text-gray-300"
+      className=" text-gray-600 underline dark:text-blue-600"
       href={termsOfService.externalUrl}
       target={termsOfService.openNewTab ? '_blank' : undefined}
       rel="noreferrer"
@@ -58,7 +58,7 @@ export default function Footer({ className }: { className?: string }) {
             const { ['node']: _, href, ...otherProps } = props;
             return (
               <a
-                className=" text-gray-600 underline dark:text-gray-300"
+                className=" text-gray-600 underline dark:text-blue-600"
                 href={href}
                 target="_blank"
                 rel="noreferrer"

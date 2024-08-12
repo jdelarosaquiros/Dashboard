@@ -17,7 +17,7 @@ const NewChatButtonIcon = ({ conversation }: { conversation: TConversation | nul
 
   if (searchQuery) {
     return (
-      <div className="shadow-stroke relative flex h-7 w-7 items-center justify-center rounded-full bg-white text-black dark:bg-white">
+      <div className="shadow-stroke relative flex h-7 w-7 items-center justify-center rounded-full bg-transparent text-white dark:bg-transparent">
         <Search className="h-5 w-5" />
       </div>
     );
@@ -37,12 +37,12 @@ const NewChatButtonIcon = ({ conversation }: { conversation: TConversation | nul
       {iconURL && iconURL.includes('http') ? (
         <ConvoIconURL preset={conversation} endpointIconURL={iconURL} context="nav" />
       ) : (
-        <div className="shadow-stroke relative flex h-full items-center justify-center rounded-full bg-white text-black dark:bg-white">
+        <div className="relative flex h-full items-center justify-center rounded-full bg-transparent text-white dark:bg-transparent">
           {endpoint && Icon && (
             <Icon
               size={41}
               context="nav"
-              className="h-2/3 w-2/3"
+              className="h-2/10 w-2/10"
               endpoint={endpoint}
               endpointType={endpointType}
               iconURL={endpointIconURL}
@@ -88,7 +88,7 @@ export default function NewChat({
               href="/"
               data-testid="nav-new-chat-button"
               onClick={clickHandler}
-              className="group flex h-10 items-center gap-2 rounded-lg px-2 font-medium hover:bg-gray-200 dark:hover:bg-gray-700"
+              className="group flex h-10 items-center gap-2 rounded-lg px-2 font-medium hover:bg-gray-200 dark:hover:bg-pink-700"
             >
               <NewChatButtonIcon conversation={conversation} />
               <div className="text-token-text-primary grow overflow-hidden text-ellipsis whitespace-nowrap text-sm">

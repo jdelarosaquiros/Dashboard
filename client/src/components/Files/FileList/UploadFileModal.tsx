@@ -23,7 +23,7 @@ const UploadFileModal = ({ open, onOpenChange }) => {
         )}
       >
         <DialogHeader>
-          <DialogTitle className="text-lg font-medium leading-6 text-gray-900 dark:text-gray-200">
+          <DialogTitle className="text-lg font-medium leading-6 text-gray-900 dark:text-gray-20">
             Upoad a File
           </DialogTitle>
         </DialogHeader>
@@ -62,7 +62,7 @@ const UploadFileModal = ({ open, onOpenChange }) => {
             </div>
             <div className="flex w-full flex-row justify-evenly sm:w-1/3">
               <Button
-                className="mr-3 w-full rounded-md border border-black bg-white p-0 text-black hover:bg-white"
+                className="mr-3 w-full rounded-md border border-black bg-white p-0 text-white hover:bg-white"
                 onClick={() => {
                   onOpenChange(false);
                 }}

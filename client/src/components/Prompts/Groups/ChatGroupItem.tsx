@@ -64,7 +64,7 @@ export default function ChatGroupItem({
                 onClick={(e) => {
                   e.stopPropagation();
                 }}
-                className="z-50 h-7 w-7 p-0 transition-all duration-300 ease-in-out hover:border-white dark:bg-gray-800 dark:hover:border-gray-400 dark:focus:border-gray-500"
+                className="z-50 h-7 w-7 p-0 transition-all duration-300 ease-in-out hover:border-white dark:bg-gray-800 dark:hover:border-pink-400 dark:hover:border-pink-500"
               >
                 <MenuIcon className="icon-md dark:text-gray-300" />
               </Button>
@@ -79,7 +79,7 @@ export default function ChatGroupItem({
                   e.stopPropagation();
                   setPreviewDialogOpen(true);
                 }}
-                className="w-full cursor-pointer rounded-lg disabled:cursor-not-allowed dark:text-gray-300 dark:hover:bg-gray-700 dark:focus:bg-gray-700"
+                className="w-full cursor-pointer rounded-lg disabled:cursor-not-allowed dark:text-gray-300 dark:hover:bg-pink-700 dark:focus:bg-pink-700"
               >
                 <TextSearch className="mr-2 h-4 w-4" />
                 <span>{localize('com_ui_preview')}</span>
@@ -88,7 +88,7 @@ export default function ChatGroupItem({
                 <DropdownMenuGroup>
                   <DropdownMenuItem
                     disabled={!isOwner}
-                    className="cursor-pointer rounded-lg disabled:cursor-not-allowed dark:text-gray-300 dark:hover:bg-gray-700 dark:focus:bg-gray-700"
+                    className="cursor-pointer rounded-lg disabled:cursor-not-allowed dark:text-gray-300 dark:hover:bg-pink-700 dark:focus:bg-pink-700"
                     onClick={(e) => {
                       e.stopPropagation();
                       onEditClick(e);

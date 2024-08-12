@@ -88,7 +88,7 @@ export default function HeaderOptions({
                   className={cn(
                     cardStyle,
                     'z-50 flex h-[40px] min-w-4 flex-none items-center justify-center px-3 focus:ring-0 focus:ring-offset-0',
-                    'hover:bg-gray-50 radix-state-open:bg-gray-50 dark:hover:bg-gray-700 dark:radix-state-open:bg-gray-700',
+                    'hover:bg-blue-50 radix-state-open:bg-blue-50 dark:hover:bg-pink-700 dark:radix-state-open:bg-pink-700',
                   )}
                   onClick={triggerAdvancedMode}
                 >

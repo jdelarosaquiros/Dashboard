@@ -64,11 +64,11 @@ const ConvoIconURL: React.FC<ConvoIconURLProps> = ({
   }
 
   return (
-    <div className="shadow-stroke relative flex h-full items-center justify-center rounded-full bg-white text-black">
+    <div className="relative flex h-full items-center justify-center rounded-full bg-transparent text-white">
       <Icon
         size={41}
         context={context}
-        className="h-2/3 w-2/3"
+        className="h-2/10 w-2/10"
         iconURL={endpointIconURL}
         assistantName={assistantName}
         avatar={assistantAvatar}

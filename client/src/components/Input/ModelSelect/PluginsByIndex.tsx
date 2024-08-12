@@ -68,7 +68,7 @@ export default function PluginsByIndex({
         type="button"
         className={cn(
           cardStyle,
-          'z-40 flex h-[40px] min-w-4 flex-none items-center justify-center px-3 hover:bg-white focus:ring-0 focus:ring-offset-0 dark:hover:bg-gray-700',
+          'z-40 flex h-[40px] min-w-4 flex-none items-center justify-center px-3 hover:bg-white focus:ring-0 focus:ring-offset-0 dark:hover:bg-pink-700',
         )}
         onClick={() => setVisibility((prev) => !prev)}
       >

@@ -23,7 +23,8 @@ export default function Landing({ Header }: { Header?: ReactNode }) {
     endpoint = EModelEndpoint.openAI;
   }
 
-  const iconURL = conversation?.iconURL;
+  // const iconURL = conversation?.iconURL;
+  const iconURL = "https://raw.githubusercontent.com/jdelarosaquiros/safeai-icon/main/Icon.jpg";
   endpoint = getIconEndpoint({ endpointsConfig, iconURL, endpoint });
 
   const isAssistant = isAssistantsEndpoint(endpoint);
@@ -32,7 +33,7 @@ export default function Landing({ Header }: { Header?: ReactNode }) {
   const avatar = (assistant && (assistant?.metadata?.avatar as string)) || '';
 
   const containerClassName =
-    'shadow-stroke relative flex h-full items-center justify-center rounded-full bg-white text-black';
+    'relative flex h-full items-center justify-center rounded-full bg-transparent text-white';
 
   return (
     <TooltipProvider delayDuration={50}>
@@ -47,7 +48,7 @@ export default function Landing({ Header }: { Header?: ReactNode }) {
                 endpointsConfig={endpointsConfig}
                 containerClassName={containerClassName}
                 context="landing"
-                className="h-2/3 w-2/3"
+                className="h-2/10 w-2/10"
                 size={41}
               />
             </div>

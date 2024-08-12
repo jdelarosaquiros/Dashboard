@@ -28,7 +28,7 @@ export default function SearchButtons({ message }: { message: TMessage }) {
   return (
     <div className="visible mt-0 flex items-center justify-center gap-1 self-end text-gray-400 lg:justify-start">
       <a
-        className="ml-0 flex cursor-pointer items-center gap-1.5 rounded-md p-1 text-xs hover:text-gray-900 hover:underline dark:text-gray-400/70 dark:hover:text-gray-200 disabled:dark:hover:text-gray-400"
+        className="ml-0 flex cursor-pointer items-center gap-1.5 rounded-md p-1 text-xs hover:text-gray-900 hover:underline dark:text-blue-600 dark:hover:text-blue-400 disabled:dark:hover:text-gray-400"
         onClick={clickHandler}
         title={localize('com_ui_go_to_conversation')}
       >

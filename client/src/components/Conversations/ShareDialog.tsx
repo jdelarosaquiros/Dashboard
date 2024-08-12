@@ -58,7 +58,7 @@ export default function ShareDialog({
 
   return (
     <div>
-      <div className="h-full py-2 text-gray-400 dark:text-gray-200">
+      <div className="h-full py-2 text-gray-400 dark:text-gray-20">
         {(() => {
           if (isLoading) {
             return <Spinner className="m-auto h-14 animate-spin" />;

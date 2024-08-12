@@ -49,7 +49,7 @@ const DialogTemplate = forwardRef((props: DialogTemplateProps, ref: Ref<HTMLDivE
   const Cancel = localize('com_ui_cancel');
 
   const defaultSelect =
-    'bg-gray-800 text-white transition-colors hover:bg-gray-700 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-gray-200 dark:text-gray-800 dark:hover:bg-gray-200';
+    'bg-gray-800 text-white transition-colors hover:bg-gray-700 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-gray-200 dark:text-gray-800 dark:hover:bg-pink-200';
   return (
     <DialogContent
       showCloseButton={showCloseButton}
@@ -58,7 +58,7 @@ const DialogTemplate = forwardRef((props: DialogTemplateProps, ref: Ref<HTMLDivE
       onClick={(e) => e.stopPropagation()}
     >
       <DialogHeader className={cn(headerClassName ?? '')}>
-        <DialogTitle className="text-lg font-medium leading-6 text-gray-800 dark:text-gray-200">
+        <DialogTitle className="text-lg font-medium leading-6 text-gray-800 dark:text-gray-20">
           {title}
         </DialogTitle>
         {description && (
@@ -72,7 +72,7 @@ const DialogTemplate = forwardRef((props: DialogTemplateProps, ref: Ref<HTMLDivE
         <div>{leftButtons ? leftButtons : null}</div>
         <div className="flex h-auto gap-3">
           {showCancelButton && (
-            <DialogClose className="border-gray-100 hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-600">
+            <DialogClose className="border-gray-100 hover:bg-gray-100 dark:border-pink-600 dark:hover:bg-pink-600">
               {Cancel}
             </DialogClose>
           )}

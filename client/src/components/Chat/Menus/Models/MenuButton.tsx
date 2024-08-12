@@ -24,7 +24,7 @@ export default function MenuButton({
     <Trigger asChild>
       <div
         className={cn(
-          'group flex cursor-pointer items-center gap-1 rounded-xl px-3 py-2 text-lg font-medium hover:bg-gray-50 radix-state-open:bg-gray-50 dark:hover:bg-gray-700 dark:radix-state-open:bg-gray-700',
+          'group flex cursor-pointer items-center gap-1 rounded-xl px-3 py-2 text-lg font-medium border border-blue-200 dark:border-pink-700 hover:bg-blue-50 radix-state-open:bg-blue-50 dark:hover:bg-pink-700 dark:radix-state-open:bg-pink-700',
           className,
         )}
         // type="button"

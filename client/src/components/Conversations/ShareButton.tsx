@@ -34,7 +34,7 @@ export default function ShareButton({
   const [isUpdated, setIsUpdated] = useState(false);
 
   const classProp: { className?: string } = {
-    className: 'p-1 hover:text-black dark:hover:text-white',
+    className: 'p-1 hover:text-white dark:hover:text-white',
   };
   if (className) {
     classProp.className = className;
@@ -82,7 +82,7 @@ export default function ShareButton({
       <DialogTrigger asChild>
         <button
           className={cn(
-            'group m-1.5 flex w-full cursor-pointer items-center gap-2 rounded p-2.5 text-sm hover:bg-gray-200 focus-visible:bg-gray-200 focus-visible:outline-0 radix-disabled:pointer-events-none radix-disabled:opacity-50 dark:hover:bg-gray-600 dark:focus-visible:bg-gray-600',
+            'group m-1.5 flex w-full cursor-pointer items-center gap-2 rounded p-2.5 text-sm hover:bg-gray-200 focus-visible:bg-gray-200 focus-visible:outline-0 radix-disabled:pointer-events-none radix-disabled:opacity-50 dark:hover:bg-pink-600 dark:focus-visible:bg-pink-600',
             className,
           )}
         >

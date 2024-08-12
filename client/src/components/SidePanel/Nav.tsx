@@ -84,8 +84,8 @@ export default function Nav({ links, isCollapsed, resize, defaultActive }: NavPr
                                 variant === 'default'
                                   ? 'dark:bg-muted dark:hover:bg-muted dark:text-white dark:hover:text-white'
                                   : '',
-                                'hover:bg-gray-50 data-[state=open]:bg-gray-50 data-[state=open]:text-black dark:hover:bg-gray-700 dark:data-[state=open]:bg-gray-700 dark:data-[state=open]:text-white',
-                                'w-full justify-start rounded-md border dark:border-gray-700',
+                                'hover:bg-gray-50 data-[state=open]:bg-gray-50 data-[state=open]:text-white dark:hover:bg-pink-700 dark:data-[state=open]:bg-gray-700 dark:data-[state=open]:text-white',
+                                'w-full justify-start rounded-md border dark:border-pink-700',
                               )}
                               onClick={() => {
                                 if (link.onClick) {

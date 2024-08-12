@@ -111,7 +111,7 @@ const CreatePromptForm = ({
                   <Input
                     {...field}
                     type="text"
-                    className="mr-2 w-full border border-gray-300 p-2 text-2xl dark:border-gray-600"
+                    className="mr-2 w-full border border-gray-300 p-2 text-2xl dark:border-pink-600"
                     placeholder={`${localize('com_ui_prompt_name')}*`}
                     tabIndex={1}
                     autoFocus={true}
@@ -132,10 +132,10 @@ const CreatePromptForm = ({
         </div>
         <div className="flex w-full flex-col gap-4 md:mt-[1.075rem]">
           <div>
-            <h2 className="flex items-center justify-between rounded-t-lg border border-gray-300 py-2 pl-4 pr-1 text-base font-semibold dark:border-gray-600 dark:text-gray-200">
+            <h2 className="flex items-center justify-between rounded-t-lg border border-gray-300 py-2 pl-4 pr-1 text-base font-semibold dark:border-pink-600 dark:text-gray-20">
               {localize('com_ui_prompt_text')}*
             </h2>
-            <div className="min-h-32 rounded-b-lg border border-gray-300 p-4 transition-all duration-150 dark:border-gray-600">
+            <div className="min-h-32 rounded-b-lg border border-gray-300 p-4 transition-all duration-150 dark:border-pink-600">
               <Controller
                 name="prompt"
                 control={control}
@@ -144,7 +144,7 @@ const CreatePromptForm = ({
                   <div>
                     <TextareaAutosize
                       {...field}
-                      className="w-full rounded border border-gray-300 px-2 py-1 focus:outline-none dark:border-gray-600 dark:bg-transparent dark:text-gray-200"
+                      className="w-full rounded border border-gray-300 px-2 py-1 focus:outline-none dark:border-pink-600 dark:bg-transparent dark:text-gray-20"
                       minRows={6}
                       tabIndex={2}
                     />

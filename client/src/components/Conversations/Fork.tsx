@@ -68,7 +68,7 @@ const PopoverButton: React.FC<PopoverButtonProps> = ({
             setActiveSetting(optionLabels.default);
           }, 175);
         }}
-        className="mx-1 max-w-14 flex-1 rounded-lg border-2 bg-white text-gray-700 transition duration-300 ease-in-out hover:bg-gray-200 hover:text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-gray-100 "
+        className="mx-1 max-w-14 flex-1 rounded-lg border-2 bg-white text-gray-700 transition duration-300 ease-in-out hover:bg-gray-200 hover:text-gray-900 dark:border-pink-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-pink-600 dark:hover:text-gray-100 "
         type="button"
       >
         {children}
@@ -165,8 +165,8 @@ export default function Fork({
       <Popover.Trigger asChild>
         <button
           className={cn(
-            'hover-button active rounded-md p-1 hover:bg-gray-100 hover:text-gray-500 dark:text-gray-400/70 dark:hover:bg-gray-700 dark:hover:text-gray-200 disabled:dark:hover:text-gray-400 md:invisible md:group-hover:visible ',
-            'data-[state=open]:active data-[state=open]:bg-gray-100 data-[state=open]:text-gray-500 data-[state=open]:dark:bg-gray-700 data-[state=open]:dark:text-gray-200',
+            'hover-button active rounded-md p-1 hover:bg-gray-100 hover:text-gray-500 dark:text-gray-400/70 dark:hover:bg-pink-700 dark:hover:text-gray-100 disabled:dark:hover:text-gray-400 md:invisible md:group-hover:visible ',
+            'data-[state=open]:active data-[state=open]:bg-gray-100 data-[state=open]:text-gray-500 data-[state=open]:dark:bg-gray-700 data-[state=open]:dark:text-gray-20',
             !isLast ? 'data-[state=open]:opacity-100 md:opacity-0 md:group-hover:opacity-100' : '',
           )}
           onClick={(e) => {
@@ -184,7 +184,7 @@ export default function Fork({
           type="button"
           title={localize('com_ui_fork')}
         >
-          <GitFork className="h-4 w-4 hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-gray-200 disabled:dark:hover:text-gray-400" />
+          <GitFork className="h-4 w-4 hover:text-gray-500 dark:hover:bg-pink-700 dark:hover:text-gray-100 disabled:dark:hover:text-gray-400" />
         </button>
       </Popover.Trigger>
       <Popover.Portal>
@@ -198,7 +198,7 @@ export default function Fork({
             sideOffset={5}
             align="center"
           >
-            <div className="flex h-6 w-full items-center justify-center text-sm dark:text-gray-200">
+            <div className="flex h-6 w-full items-center justify-center text-sm dark:text-gray-20">
               {localize(activeSetting)}
               <HoverCard openDelay={50}>
                 <HoverCardTrigger asChild>
@@ -281,7 +281,7 @@ export default function Fork({
             </div>
             <HoverCard openDelay={50}>
               <HoverCardTrigger asChild>
-                <div className="flex h-6 w-full items-center justify-start text-sm dark:text-gray-300 dark:hover:text-gray-200">
+                <div className="flex h-6 w-full items-center justify-start text-sm dark:text-gray-300 dark:hover:text-gray-100">
                   <Checkbox
                     checked={splitAtTarget}
                     onCheckedChange={(checked: boolean) => setSplitAtTarget(checked)}
@@ -299,7 +299,7 @@ export default function Fork({
             </HoverCard>
             <HoverCard openDelay={50}>
               <HoverCardTrigger asChild>
-                <div className="flex h-6 w-full items-center justify-start text-sm dark:text-gray-300 dark:hover:text-gray-200">
+                <div className="flex h-6 w-full items-center justify-start text-sm dark:text-gray-300 dark:hover:text-gray-100">
                   <Checkbox
                     checked={remember}
                     onCheckedChange={(checked: boolean) => {

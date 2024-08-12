@@ -88,7 +88,7 @@ function SelectDropDown({
                 tabIndex={tabIndex}
                 data-testid="select-dropdown-button"
                 className={cn(
-                  'relative flex w-full cursor-default flex-col rounded-md border border-black/10 bg-white py-2 pl-3 pr-10 text-left dark:border-gray-600 dark:bg-gray-700 sm:text-sm',
+                  'relative flex w-full cursor-default flex-col rounded-md border border-black/10 bg-white py-2 pl-3 pr-10 text-left dark:border-pink-600 dark:bg-gray-700 sm:text-sm',
                   className ?? '',
                 )}
               >
@@ -129,7 +129,7 @@ function SelectDropDown({
                     viewBox="0 0 24 24"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="h-4 w-4  text-gray-400"
+                    className="h-4 w-4  text-white"
                     height="1em"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"
@@ -149,7 +149,7 @@ function SelectDropDown({
               >
                 <Listbox.Options
                   className={cn(
-                    'absolute z-10 mt-2 max-h-60 w-full overflow-auto rounded border bg-white text-xs ring-black/10 dark:border-gray-600 dark:bg-gray-700 dark:ring-white/20 md:w-[100%]',
+                    'absolute z-10 mt-2 max-h-60 w-full overflow-auto rounded border bg-white text-xs ring-black/10 dark:border-pink-600 dark:bg-gray-700 dark:ring-white/20 md:w-[100%]',
                     optionsListClass ?? '',
                   )}
                 >
@@ -158,7 +158,7 @@ function SelectDropDown({
                       key={'listbox-render-option'}
                       value={null}
                       className={cn(
-                        'group relative flex h-[42px] cursor-pointer select-none items-center overflow-hidden border-b border-black/10 pl-3 pr-9 text-gray-800 last:border-0 hover:bg-gray-20 dark:border-white/20 dark:text-white dark:hover:bg-gray-700',
+                        'group relative flex h-[42px] cursor-pointer select-none items-center overflow-hidden border-b border-black/10 pl-3 pr-9 text-gray-800 last:border-0 hover:bg-gray-20 dark:border-white/20 dark:text-white dark:hover:bg-pink-700',
                         optionsClass ?? '',
                       )}
                     >
@@ -186,7 +186,7 @@ function SelectDropDown({
                         value={currentValue}
                         className={({ active }) =>
                           cn(
-                            'group relative flex h-[42px] cursor-pointer select-none items-center overflow-hidden border-b border-black/10 pl-3 pr-9 text-gray-800 last:border-0 hover:bg-gray-20 dark:border-white/20 dark:text-white dark:hover:bg-gray-700',
+                            'group relative flex h-[42px] cursor-pointer select-none items-center overflow-hidden border-b border-black/10 pl-3 pr-9 text-gray-800 last:border-0 hover:bg-gray-20 dark:border-white/20 dark:text-white dark:hover:bg-pink-700',
                             active ? 'bg-surface-tertiary' : '',
                             optionsClass ?? '',
                           )
@@ -195,7 +195,7 @@ function SelectDropDown({
                         <span className="flex items-center gap-1.5 truncate">
                           <span
                             className={cn(
-                              'flex h-6 items-center gap-1 text-gray-800 dark:text-gray-200',
+                              'flex h-6 items-center gap-1 text-gray-800 dark:text-gray-20',
                               option === value ? 'font-semibold' : '',
                               iconSide === 'left' ? 'ml-4' : '',
                             )}
@@ -206,7 +206,7 @@ function SelectDropDown({
                           {currentValue === activeValue && (
                             <span
                               className={cn(
-                                'absolute inset-y-0 flex items-center text-gray-800 dark:text-gray-200',
+                                'absolute inset-y-0 flex items-center text-gray-800 dark:text-gray-20',
                                 iconSide === 'left' ? 'left-0 pl-2' : 'right-0 pr-3',
                               )}
                             >

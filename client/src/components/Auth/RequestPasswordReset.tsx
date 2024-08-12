@@ -24,7 +24,7 @@ const ResetPasswordBodyText = () => {
     <div className="flex flex-col">
       {localize('com_auth_reset_password_if_email_exists')}
       <span>
-        <a className="text-sm text-green-500 hover:underline" href="/login">
+        <a className="text-sm text-blue-600 hover:underline" href="/login">
           {localize('com_auth_back_to_login')}
         </a>
       </span>
@@ -52,7 +52,7 @@ function RequestPasswordReset() {
           setBodyText(
             <span>
               {localize('com_auth_click')}{' '}
-              <a className="text-green-500 hover:underline" href={data.link}>
+              <a className="text-blue-600 hover:underline" href={data.link}>
                 {localize('com_auth_here')}
               </a>{' '}
               {localize('com_auth_to_reset_your_password')}
@@ -104,12 +104,12 @@ function RequestPasswordReset() {
               },
             })}
             aria-invalid={!!errors.email}
-            className="webkit-dark-styles peer block w-full appearance-none rounded-md border border-gray-300 bg-transparent px-3.5 pb-3.5 pt-4 text-sm text-gray-900 focus:border-green-500 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-green-500"
+            className="webkit-dark-styles peer block w-full appearance-none rounded-md border border-gray-300 bg-transparent px-3.5 pb-3.5 pt-4 text-sm text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-pink-500"
             placeholder=" "
           />
           <label
             htmlFor="email"
-            className="absolute start-1 top-2 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-3 text-sm text-gray-500 duration-100 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-3 peer-focus:text-green-600 dark:bg-gray-900 dark:text-gray-400 dark:peer-focus:text-green-500 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
+            className="absolute start-1 top-2 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-3 text-sm text-gray-500 duration-100 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-3 peer-focus:text-blue-600 dark:bg-gray-900 dark:text-gray-400 dark:peer-focus:text-pink-500 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
           >
             {localize('com_auth_email_address')}
           </label>
@@ -124,7 +124,7 @@ function RequestPasswordReset() {
         <button
           type="submit"
           disabled={!!errors.email}
-          className="w-full transform rounded-md bg-green-500 px-4 py-3 tracking-wide text-white transition-colors duration-200 hover:bg-green-550 focus:bg-green-550 focus:outline-none disabled:cursor-not-allowed disabled:hover:bg-green-500"
+          className="w-full transform rounded-md bg-blue-500 dark:bg-pink-700 px-4 py-3 tracking-wide text-white transition-colors duration-200 hover:bg-blue-500 dark:hover:bg-pink-500 focus:bg-blue-550 dark:focus:bg-pink-500 focus:outline-none disabled:cursor-not-allowed disabled:hover:bg-blue-500 disabled:dark:hover:bg-pink-500"
         >
           {localize('com_auth_continue')}
         </button>

@@ -56,7 +56,7 @@ export default function DashBreadcrumb() {
 
   return (
     <div className="mr-4 flex h-10 items-center justify-between">
-      <Breadcrumb className="mt-1 px-2 dark:text-gray-200">
+      <Breadcrumb className="mt-1 px-2 dark:text-gray-20">
         <BreadcrumbList>
           <BreadcrumbItem className="hover:dark:text-white">
             <BreadcrumbLink

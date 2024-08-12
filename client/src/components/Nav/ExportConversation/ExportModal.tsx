@@ -102,7 +102,7 @@ export default function ExportModal({
                       id="includeOptions"
                       disabled={!exportOptionsSupport}
                       checked={includeOptions}
-                      className="focus:ring-opacity-20 dark:border-gray-500 dark:bg-gray-700 dark:text-gray-50 dark:focus:ring-gray-600 dark:focus:ring-opacity-50 dark:focus:ring-offset-0"
+                      className="focus:ring-opacity-20 dark:border-pink-500 dark:bg-gray-700 dark:text-gray-50 dark:focus:ring-pink-600 dark:focus:ring-opacity-50 dark:focus:ring-offset-0"
                       onCheckedChange={setIncludeOptions}
                     />
                     <label
@@ -125,7 +125,7 @@ export default function ExportModal({
                     id="exportBranches"
                     disabled={!exportBranchesSupport}
                     checked={exportBranches}
-                    className="focus:ring-opacity-20 dark:border-gray-500 dark:bg-gray-700 dark:text-gray-50 dark:focus:ring-gray-600 dark:focus:ring-opacity-50 dark:focus:ring-offset-0"
+                    className="focus:ring-opacity-20 dark:border-pink-500 dark:bg-gray-700 dark:text-gray-50 dark:focus:ring-pink-600 dark:focus:ring-opacity-50 dark:focus:ring-offset-0"
                     onCheckedChange={setExportBranches}
                   />
                   <label
@@ -147,7 +147,7 @@ export default function ExportModal({
                     <Checkbox
                       id="recursive"
                       checked={recursive}
-                      className="focus:ring-opacity-20 dark:border-gray-500 dark:bg-gray-700 dark:text-gray-50 dark:focus:ring-gray-600 dark:focus:ring-opacity-50 dark:focus:ring-offset-0"
+                      className="focus:ring-opacity-20 dark:border-pink-500 dark:bg-gray-700 dark:text-gray-50 dark:focus:ring-pink-600 dark:focus:ring-opacity-50 dark:focus:ring-offset-0"
                       onCheckedChange={setRecursive}
                     />
                     <label

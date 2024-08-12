@@ -64,7 +64,7 @@ const Registration: React.FC = () => {
             validation,
           )}
           aria-invalid={!!errors[id]}
-          className="webkit-dark-styles peer block w-full appearance-none rounded-md border border-gray-300 bg-transparent px-3.5 pb-3.5 pt-4 text-sm text-gray-900 focus:border-green-500 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-green-500"
+          className="webkit-dark-styles peer block w-full appearance-none rounded-md border border-gray-300 bg-transparent px-3.5 pb-3.5 pt-4 text-sm text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-pink-500"
           placeholder=" "
           data-testid={id}
         />
@@ -92,7 +92,7 @@ const Registration: React.FC = () => {
       )}
       {registerUser.isSuccess && countdown > 0 && (
         <div
-          className="rounded-md border border-green-500 bg-green-500/10 px-3 py-2 text-sm text-gray-600 dark:text-gray-200"
+          className="rounded-md border border-green-500 bg-green-500/10 px-3 py-2 text-sm text-gray-600 dark:text-gray-20"
           role="alert"
         >
           {localize(
@@ -168,7 +168,7 @@ const Registration: React.FC = () => {
                 disabled={Object.keys(errors).length > 0}
                 type="submit"
                 aria-label="Submit registration"
-                className="w-full transform rounded-md bg-green-500 px-4 py-3 tracking-wide text-white transition-colors duration-200 hover:bg-green-550 focus:bg-green-550 focus:outline-none disabled:cursor-not-allowed disabled:hover:bg-green-500"
+                className="w-full transform rounded-md bg-blue-500 dark:bg-pink-700 px-4 py-3 tracking-wide text-white transition-colors duration-200 hover:bg-blue-500 dark:hover:bg-pink-500 focus:bg-blue-550 dark:focus:bg-pink-500 focus:outline-none disabled:cursor-not-allowed disabled:hover:bg-blue-500 disabled:dark:hover:bg-pink-500"
               >
                 {localize('com_auth_continue')}
               </button>
@@ -177,7 +177,7 @@ const Registration: React.FC = () => {
 
           <p className="my-4 text-center text-sm font-light text-gray-700 dark:text-white">
             {localize('com_auth_already_have_account')}{' '}
-            <a href="/login" aria-label="Login" className="p-1 text-green-500">
+            <a href="/login" aria-label="Login" className="p-1 text-blue-600">
               {localize('com_auth_login')}
             </a>
           </p>

@@ -76,7 +76,7 @@ function MultiSelectDropDown({
             <>
               <Listbox.Button
                 className={cn(
-                  'relative flex w-full cursor-default flex-col rounded-md border border-black/10 bg-white py-2 pl-3 pr-10 text-left focus:outline-none focus:ring-0 focus:ring-offset-0 dark:border-gray-600 dark:border-white/20 dark:bg-gray-800 sm:text-sm',
+                  'relative flex w-full cursor-default flex-col rounded-md border border-black/10 bg-white py-2 pl-3 pr-10 text-left focus:outline-none focus:ring-0 focus:ring-offset-0 dark:border-pink-600 dark:border-white/20 dark:bg-gray-800 sm:text-sm',
                   className ?? '',
                 )}
                 id={excludeIds[0]}
@@ -135,7 +135,7 @@ function MultiSelectDropDown({
                     viewBox="0 0 24 24"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="h-4 w-4  text-gray-400"
+                    className="h-4 w-4 text-white"
                     height="1em"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"
@@ -170,7 +170,7 @@ function MultiSelectDropDown({
                       <Listbox.Option
                         key={i}
                         value={option[optionValueKey]}
-                        className="group relative flex h-[42px] cursor-pointer select-none items-center overflow-hidden border-b border-black/10 pl-3 pr-9 text-gray-800 last:border-0 hover:bg-gray-20 dark:border-white/20 dark:text-white dark:hover:bg-gray-700"
+                        className="group relative flex h-[42px] cursor-pointer select-none items-center overflow-hidden border-b border-black/10 pl-3 pr-9 text-gray-800 last:border-0 hover:bg-gray-20 dark:border-white/20 dark:text-white dark:hover:bg-pink-700"
                       >
                         <span className="flex items-center gap-1.5 truncate">
                           {!option.isButton && (
@@ -191,19 +191,19 @@ function MultiSelectDropDown({
                           )}
                           <span
                             className={cn(
-                              'flex h-6 items-center gap-1 text-gray-800 dark:text-gray-200',
+                              'flex h-6 items-center gap-1 text-gray-800 dark:text-gray-20',
                               selected ? 'font-semibold' : '',
                             )}
                           >
                             {option.name}
                           </span>
                           {option.isButton && (
-                            <span className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-800 dark:text-gray-200">
+                            <span className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-800 dark:text-gray-20">
                               <ArrowRight />
                             </span>
                           )}
                           {selected && !option.isButton && (
-                            <span className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-800 dark:text-gray-200">
+                            <span className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-800 dark:text-gray-20">
                               <CheckMark />
                             </span>
                           )}

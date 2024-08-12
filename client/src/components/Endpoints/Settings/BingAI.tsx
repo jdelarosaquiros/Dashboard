@@ -80,7 +80,7 @@ export default function Settings({ conversation, setOption, readonly }: TSetting
               'flex max-h-[138px] min-h-[100px] w-full resize-none px-3 py-2',
             )}
           />
-          <small className="mb-5 text-black dark:text-white">{`${localize(
+          <small className="mb-5 text-white dark:text-white">{`${localize(
             'com_endpoint_token_count',
           )}: ${tokenCount}`}</small>
         </div>
@@ -96,7 +96,7 @@ export default function Settings({ conversation, setOption, readonly }: TSetting
               id="jailbreak"
               disabled={readonly}
               checked={jailbreak}
-              className="focus:ring-opacity-20 dark:border-gray-500 dark:bg-gray-700 dark:text-gray-50 dark:focus:ring-gray-600 dark:focus:ring-opacity-50 dark:focus:ring-offset-0"
+              className="focus:ring-opacity-20 dark:border-pink-500 dark:bg-gray-700 dark:text-gray-50 dark:focus:ring-pink-600 dark:focus:ring-opacity-50 dark:focus:ring-offset-0"
               onCheckedChange={setJailbreak}
             />
             <label

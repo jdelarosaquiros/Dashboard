@@ -30,7 +30,7 @@ import { Panel } from '~/common';
 
 const labelClass = 'mb-2 block text-xs font-bold text-gray-700 dark:text-gray-400';
 const inputClass =
-  'focus:shadow-outline w-full appearance-none rounded-md border px-3 py-2 text-sm leading-tight text-gray-700 dark:text-white shadow focus:border-green-500 focus:outline-none focus:ring-0 dark:bg-gray-800 dark:border-gray-700/80';
+  'focus:shadow-outline w-full appearance-none rounded-md border px-3 py-2 text-sm leading-tight text-gray-700 dark:text-white shadow focus:border-green-500 focus:outline-none focus:ring-0 dark:bg-gray-800 dark:border-pink-700/80';
 
 export default function AssistantPanel({
   // index = 0,
@@ -297,7 +297,7 @@ export default function AssistantPanel({
                   {...field}
                   value={field.value ?? ''}
                   {...{ max: 32768 }}
-                  className="focus:shadow-outline min-h-[150px] w-full resize-none resize-y appearance-none rounded-md border px-3 py-2 text-sm leading-tight text-gray-700 shadow focus:border-green-500 focus:outline-none focus:ring-0 dark:border-gray-700/80 dark:bg-gray-800 dark:text-white"
+                  className="focus:shadow-outline min-h-[150px] w-full resize-none resize-y appearance-none rounded-md border px-3 py-2 text-sm leading-tight text-gray-700 shadow focus:border-green-500 focus:outline-none focus:ring-0 dark:border-pink-700/80 dark:bg-gray-800 dark:text-white"
                   id="instructions"
                   placeholder={localize('com_assistants_instructions_placeholder')}
                   rows={3}
@@ -377,7 +377,7 @@ export default function AssistantPanel({
                 <button
                   type="button"
                   onClick={() => setShowToolDialog(true)}
-                  className="btn border-token-border-light relative mx-1 mt-2 h-8 rounded-lg bg-transparent font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
+                  className="btn border-token-border-light relative mx-1 mt-2 h-8 rounded-lg bg-transparent font-medium hover:bg-gray-100 dark:hover:bg-pink-700"
                 >
                   <div className="flex w-full items-center justify-center gap-2">
                     {localize('com_assistants_add_tools')}
@@ -397,7 +397,7 @@ export default function AssistantPanel({
                     }
                     setActivePanel(Panel.actions);
                   }}
-                  className="btn border-token-border-light relative mt-2 h-8 rounded-lg bg-transparent font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
+                  className="btn border-token-border-light relative mt-2 h-8 rounded-lg bg-transparent font-medium hover:bg-gray-100 dark:hover:bg-pink-700"
                 >
                   <div className="flex w-full items-center justify-center gap-2">
                     {localize('com_assistants_add_actions')}

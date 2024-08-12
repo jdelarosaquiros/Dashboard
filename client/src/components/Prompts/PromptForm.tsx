@@ -224,7 +224,7 @@ const PromptForm = () => {
     <FormProvider {...methods}>
       <form onSubmit={handleSubmit((data) => onSave(data.prompt))}>
         <div>
-          <div className="flex flex-col items-center justify-between px-4 dark:text-gray-200 sm:flex-row">
+          <div className="flex flex-col items-center justify-between px-4 dark:text-gray-20 sm:flex-row">
             {isLoadingGroup ? (
               <Skeleton className="mb-1 flex h-10 w-32 flex-row items-center font-bold sm:text-xl md:mb-0 md:h-12 md:text-2xl" />
             ) : (
@@ -301,7 +301,7 @@ const PromptForm = () => {
           )}
           <div className="flex h-full w-full flex-col md:flex-row">
             {/* Left Section */}
-            <div className="flex-1 overflow-y-auto border-gray-300 p-4 dark:border-gray-600 md:max-h-[calc(100vh-150px)] md:border-r">
+            <div className="flex-1 overflow-y-auto border-gray-300 p-4 dark:border-pink-600 md:max-h-[calc(100vh-150px)] md:border-r">
               {isLoadingPrompts ? (
                 <Skeleton className="h-96" />
               ) : (

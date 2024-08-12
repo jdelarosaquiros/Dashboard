@@ -8,7 +8,7 @@ function PluginStoreLinkButton({ onClick, label }: TPluginStoreLinkButtonProps) 
     <div
       role="button"
       onClick={onClick}
-      className="text-sm text-black/70 hover:text-black/50 dark:text-white/70 dark:hover:text-white/50"
+      className="text-sm text-white/70 hover:text-white/50 dark:text-white/70 dark:hover:text-white/50"
     >
       {label}
     </div>

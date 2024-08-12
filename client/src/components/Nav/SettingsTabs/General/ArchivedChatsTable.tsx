@@ -31,7 +31,7 @@ export default function ArchivedChatsTable({ className }: { className?: string }
   );
 
   const classProp: { className?: string } = {
-    className: 'p-1 hover:text-black dark:hover:text-white',
+    className: 'p-1 hover:text-white dark:hover:text-white',
   };
   if (className) {
     classProp.className = className;
@@ -52,7 +52,7 @@ export default function ArchivedChatsTable({ className }: { className?: string }
     >
       <table className="table-fixed text-left">
         <thead className="sticky top-0 bg-white dark:bg-gray-700">
-          <tr className="border-b border-gray-200 text-sm font-semibold text-gray-500 dark:border-white/10 dark:text-gray-200">
+          <tr className="border-b border-gray-200 text-sm font-semibold text-gray-500 dark:border-pink-600 dark:text-gray-20">
             <th className="p-3">{localize('com_nav_archive_name')}</th>
             <th className="p-3">{localize('com_nav_archive_created_at')}</th>
           </tr>
@@ -61,7 +61,7 @@ export default function ArchivedChatsTable({ className }: { className?: string }
           {conversations.map((conversation) => (
             <tr
               key={conversation.conversationId}
-              className="border-b border-gray-200 text-sm font-normal dark:border-white/10"
+              className="border-b border-gray-200 text-sm font-normal dark:border-pink-600"
             >
               <td className="flex items-center py-3 text-blue-800/70 dark:text-blue-500">
                 <MessageCircle className="mr-1 h-5 w-5" />
@@ -69,7 +69,7 @@ export default function ArchivedChatsTable({ className }: { className?: string }
               </td>
               <td className="p-1">
                 <div className="flex justify-between">
-                  <div className="flex justify-start dark:text-gray-200">
+                  <div className="flex justify-start dark:text-gray-20">
                     {new Date(conversation.createdAt).toLocaleDateString('en-US', {
                       month: 'long',
                       day: 'numeric',
@@ -80,7 +80,7 @@ export default function ArchivedChatsTable({ className }: { className?: string }
                     {conversation.conversationId && (
                       <>
                         <ArchiveButton
-                          className="hover:text-black dark:hover:text-white"
+                          className="hover:text-white dark:hover:text-white"
                           conversationId={conversation.conversationId}
                           retainView={moveToTop}
                           shouldArchive={false}
@@ -93,7 +93,7 @@ export default function ArchivedChatsTable({ className }: { className?: string }
                             renaming={false}
                             title={conversation.title}
                             appendLabel={false}
-                            className="group ml-4 flex w-full cursor-pointer items-center items-center gap-2 rounded text-sm hover:bg-gray-200 focus-visible:bg-gray-200 focus-visible:outline-0 radix-disabled:pointer-events-none radix-disabled:opacity-50 dark:hover:bg-gray-600 dark:focus-visible:bg-gray-600"
+                            className="group ml-4 flex w-full cursor-pointer items-center items-center gap-2 rounded text-sm hover:bg-gray-200 focus-visible:bg-gray-200 focus-visible:outline-0 radix-disabled:pointer-events-none radix-disabled:opacity-50 dark:hover:bg-pink-600 dark:focus-visible:bg-pink-600"
                           />
                         </div>
                       </>
@@ -106,7 +106,7 @@ export default function ArchivedChatsTable({ className }: { className?: string }
         </tbody>
       </table>
       {(isFetchingNextPage || showLoading) && (
-        <Spinner className={cn('m-1 mx-auto mb-4 h-4 w-4 text-black dark:text-white')} />
+        <Spinner className={cn('m-1 mx-auto mb-4 h-4 w-4 text-white dark:text-white')} />
       )}
     </div>
   );

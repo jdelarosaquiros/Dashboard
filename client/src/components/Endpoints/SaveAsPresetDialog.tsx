@@ -65,7 +65,7 @@ const SaveAsPresetDialog = ({ open, onOpenChange, preset }: TEditPresetProps) =>
                 placeholder="Set a custom name for this preset"
                 className={cn(
                   defaultTextProps,
-                  'flex h-10 max-h-10 w-full resize-none border-gray-100 px-3 py-2 dark:border-gray-600',
+                  'flex h-10 max-h-10 w-full resize-none border-gray-100 px-3 py-2 dark:border-pink-600',
                   removeFocusOutlines,
                 )}
               />

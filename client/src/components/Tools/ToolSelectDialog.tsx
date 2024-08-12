@@ -146,10 +146,10 @@ function ToolSelectDialog({
           className="relative w-full transform overflow-hidden overflow-y-auto rounded-lg bg-white text-left shadow-xl transition-all dark:bg-gray-800 max-sm:h-full sm:mx-7 sm:my-8 sm:max-w-2xl lg:max-w-5xl xl:max-w-7xl"
           style={{ minHeight: '610px' }}
         >
-          <div className="flex items-center justify-between border-b-[1px] border-black/10 px-4 pb-4 pt-5 dark:border-white/10 sm:p-6">
+          <div className="flex items-center justify-between border-b-[1px] border-black/10 px-4 pb-4 pt-5 dark:border-pink-600 sm:p-6">
             <div className="flex items-center">
               <div className="text-center sm:text-left">
-                <Dialog.Title className="text-lg font-medium leading-6 text-gray-900 dark:text-gray-200">
+                <Dialog.Title className="text-lg font-medium leading-6 text-gray-900 dark:text-gray-20">
                   {localize('com_nav_tool_dialog')}
                 </Dialog.Title>
                 <Dialog.Description className="text-sm text-gray-500 dark:text-gray-300">
@@ -164,7 +164,7 @@ function ToolSelectDialog({
                     setIsOpen(false);
                     setCurrentPage(1);
                   }}
-                  className="inline-block text-gray-500 hover:text-gray-200"
+                  className="inline-block text-gray-500 hover:text-gray-100"
                   tabIndex={0}
                 >
                   <X />
@@ -198,7 +198,7 @@ function ToolSelectDialog({
                   value={searchValue}
                   onChange={handleSearch}
                   placeholder={localize('com_nav_plugin_search')}
-                  className="w-64 rounded border border-gray-300 px-2 py-1 focus:outline-none dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
+                  className="w-64 rounded border border-gray-300 px-2 py-1 focus:outline-none dark:border-pink-600 dark:bg-gray-800 dark:text-gray-20"
                 />
               </div>
               <div

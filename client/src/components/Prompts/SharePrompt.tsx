@@ -81,13 +81,13 @@ const SharePrompt = ({ group, disabled }: { group?: TPromptGroup; disabled: bool
         <Button
           variant={'default'}
           size={'sm'}
-          className="h-10 w-10 border border-transparent bg-blue-500/90 transition-all hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-800"
+          className="h-10 w-10 border border-transparent bg-blue-500/90 transition-all hover:bg-blue-600 dark:bg-gray-600 dark:hover:bg-pink-700"
           disabled={disabled}
         >
           <Share2Icon className="cursor-pointer text-white " />
         </Button>
       </OGDialogTrigger>
-      <OGDialogContent className="bg-white dark:border-gray-700 dark:bg-gray-850 dark:text-gray-300">
+      <OGDialogContent className="bg-white dark:border-pink-700 dark:bg-gray-850 dark:text-gray-20">
         <OGDialogTitle>{localize('com_ui_share_var', `"${group.name}"`)}</OGDialogTitle>
         <form className="p-2" onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4 flex items-center justify-between gap-2 py-4">
@@ -136,7 +136,7 @@ const SharePrompt = ({ group, disabled }: { group?: TPromptGroup; disabled: bool
               <button
                 type="submit"
                 disabled={isSubmitting || isFetching}
-                className="btn rounded bg-green-500 font-bold text-white transition-all hover:bg-green-600"
+                className="btn rounded bg-blue-500 font-bold text-white transition-all hover:bg-blue-600"
               >
                 {localize('com_ui_save')}
               </button>

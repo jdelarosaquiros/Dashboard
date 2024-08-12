@@ -106,7 +106,7 @@ export default function DataTableFile<TData, TValue>({
                 deleteFiles({ files: filesToDelete as TFile[] });
                 setRowSelection({});
               }}
-              className="ml-1 gap-2 dark:hover:bg-gray-850/25 sm:ml-0"
+              className="ml-1 gap-2 dark:hover:bg-pink-850/25 sm:ml-0"
               disabled={!table.getFilteredSelectedRowModel().rows.length || isDeleting}
             >
               {isDeleting ? (
@@ -127,7 +127,7 @@ export default function DataTableFile<TData, TValue>({
               </DropdownMenuTrigger>
               <DropdownMenuContent
                 align="end"
-                className="z-[1001] dark:border-gray-700 dark:bg-gray-850"
+                className="z-[1001] dark:border-pink-700 dark:bg-gray-850"
               >
                 {table
                   .getAllColumns()
@@ -136,7 +136,7 @@ export default function DataTableFile<TData, TValue>({
                     return (
                       <DropdownMenuCheckboxItem
                         key={column.id}
-                        className="cursor-pointer capitalize dark:text-white dark:hover:bg-gray-800"
+                        className="cursor-pointer capitalize dark:text-white dark:hover:bg-pink-700"
                         checked={column.getIsVisible()}
                         onCheckedChange={(value) => column.toggleVisibility(!!value)}
                       >
@@ -150,7 +150,7 @@ export default function DataTableFile<TData, TValue>({
               placeholder={localize('com_files_filter')}
               value={(table.getColumn('filename')?.getFilterValue() as string) ?? ''}
               onChange={(event) => table.getColumn('filename')?.setFilterValue(event.target.value)}
-              className="max-w-sm dark:border-gray-500"
+              className="max-w-sm dark:border-pink-500"
             />
             <UploadFileButton
               onClick={() => {
@@ -160,7 +160,7 @@ export default function DataTableFile<TData, TValue>({
           </div>
         </div>
       </div>
-      <div className="relative mt-3 max-h-[25rem] min-h-0 overflow-y-auto rounded-md border border-black/10 pb-4 dark:border-white/10 sm:min-h-[28rem]">
+      <div className="relative mt-3 max-h-[25rem] min-h-0 overflow-y-auto rounded-md border border-black/10 pb-4 dark:border-pink-600 sm:min-h-[28rem]">
         <Table className="w-full min-w-[600px] border-separate border-spacing-0">
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
@@ -191,7 +191,7 @@ export default function DataTableFile<TData, TValue>({
                   return (
                     <TableHead
                       key={header.id}
-                      className="align-start sticky top-0 rounded-t border-b border-black/10 bg-white px-2 py-1 text-left font-medium text-gray-700 dark:border-white/10 dark:bg-gray-700 dark:text-gray-100 sm:px-4 sm:py-2"
+                      className="align-start sticky top-0 rounded-t border-b border-black/10 bg-white px-2 py-1 text-left font-medium text-gray-700 dark:border-pink-600 dark:bg-gray-700 dark:text-gray-20 sm:px-4 sm:py-2"
                       style={style}
                     >
                       {header.isPlaceholder
@@ -209,7 +209,7 @@ export default function DataTableFile<TData, TValue>({
                 <TableRow
                   key={row.id}
                   data-state={row.getIsSelected() && 'selected'}
-                  className="border-b border-black/10 text-left text-gray-600 dark:border-white/10 dark:text-gray-300 [tr:last-child_&]:border-b-0"
+                  className="border-b border-black/10 text-left text-gray-600 dark:border-pink-600 dark:text-gray-300 [tr:last-child_&]:border-b-0"
                 >
                   {row.getVisibleCells().map((cell, index) => {
                     const maxWidth =
@@ -254,7 +254,7 @@ export default function DataTableFile<TData, TValue>({
           )}
         </div>
         <Button
-          className="dark:border-gray-500 dark:hover:bg-gray-600"
+          className="dark:border-pink-500 dark:hover:bg-pink-600"
           variant="outline"
           size="sm"
           onClick={() => table.previousPage()}
@@ -263,7 +263,7 @@ export default function DataTableFile<TData, TValue>({
           {localize('com_ui_prev')}
         </Button>
         <Button
-          className="dark:border-gray-500 dark:hover:bg-gray-600"
+          className="dark:border-pink-500 dark:hover:bg-pink-600"
           variant="outline"
           size="sm"
           onClick={() => table.nextPage()}

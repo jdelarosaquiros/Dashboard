@@ -34,7 +34,7 @@ function NavLinks() {
           <>
             <Menu.Button
               className={cn(
-                'group-ui-open:bg-gray-100 dark:group-ui-open:bg-gray-700 duration-350 mt-text-sm flex h-auto w-full items-center gap-2 rounded-lg p-2 text-sm transition-colors hover:bg-gray-100 dark:hover:bg-gray-800',
+                'group-ui-open:bg-gray-100 dark:group-ui-open:bg-gray-700 duration-350 mt-text-sm flex h-auto w-full items-center gap-2 rounded-lg p-2 text-sm transition-colors hover:bg-gray-100 dark:hover:bg-pink-700',
                 open ? 'bg-gray-100 dark:bg-gray-800' : '',
               )}
               data-testid="nav-user"
@@ -59,7 +59,7 @@ function NavLinks() {
                 </div>
               </div>
               <div
-                className="mt-2 grow overflow-hidden text-ellipsis whitespace-nowrap text-left text-black dark:text-gray-100"
+                className="mt-2 grow overflow-hidden text-ellipsis whitespace-nowrap text-left text-white dark:text-gray-20"
                 style={{ marginTop: '0', marginLeft: '0' }}
               >
                 {user?.name || user?.username || localize('com_nav_user')}
@@ -75,7 +75,7 @@ function NavLinks() {
               leaveFrom="translate-y-0 opacity-100"
               leaveTo="translate-y-2 opacity-0"
             >
-              <Menu.Items className="absolute bottom-full left-0 z-[100] mb-1 mt-1 w-full translate-y-0 overflow-hidden rounded-lg border border-gray-300 bg-white p-1.5 opacity-100 shadow-lg outline-none dark:border-gray-600 dark:bg-gray-700">
+              <Menu.Items className="absolute bottom-full left-0 z-[100] mb-1 mt-1 w-full translate-y-0 overflow-hidden rounded-lg border border-gray-300 bg-white p-1.5 opacity-100 shadow-lg outline-none dark:border-pink-600 dark:bg-gray-700">
                 <div className="text-token-text-secondary ml-3 mr-2 py-2 text-sm" role="none">
                   {user?.email || localize('com_nav_user')}
                 </div>

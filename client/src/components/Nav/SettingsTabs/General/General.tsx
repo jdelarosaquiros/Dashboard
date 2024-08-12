@@ -156,23 +156,23 @@ function General() {
       className="w-full md:min-h-[271px]"
       ref={contentRef}
     >
-      <div className="flex flex-col gap-3 text-sm text-black dark:text-gray-50">
-        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-gray-600">
+      <div className="flex flex-col gap-3 text-sm text-white dark:text-gray-50">
+        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-pink-600">
           <ThemeSelector theme={theme} onChange={changeTheme} />
         </div>
-        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-gray-600">
+        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-pink-600">
           <LangSelector langcode={selectedLang} onChange={changeLang} />
         </div>
-        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-gray-600">
+        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-pink-600">
           <AutoScrollSwitch />
         </div>
-        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-gray-600">
+        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-pink-600">
           <HideSidePanelSwitch />
         </div>
-        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-gray-600">
+        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-pink-600">
           <ArchivedChats />
         </div>
-        {/* <div className="border-b pb-3 last-of-type:border-b-0 dark:border-gray-600">
+        {/* <div className="border-b pb-3 last-of-type:border-b-0 dark:border-pink-600">
         </div> */}
       </div>
     </Tabs.Content>

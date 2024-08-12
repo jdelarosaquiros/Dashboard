@@ -97,7 +97,7 @@ const Plugin: React.FC<PluginProps> = ({ plugin }) => {
                     <div>{generateStatus()}</div>
                   </div>
                 </div>
-                {plugin.loading && <Spinner className="ml-1 text-black" />}
+                {plugin.loading && <Spinner className="ml-1 text-white" />}
                 <Disclosure.Button className="ml-12 flex items-center gap-2">
                   <ChevronDownIcon {...iconProps} />
                 </Disclosure.Button>

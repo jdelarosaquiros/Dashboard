@@ -4,7 +4,7 @@ export default function TitleButton({ primaryText = '', secondaryText = '' }) {
   return (
     <Trigger asChild>
       <div
-        className="group flex cursor-pointer items-center gap-1 rounded-xl px-3 py-2 text-lg font-medium hover:bg-gray-50 radix-state-open:bg-gray-50 dark:hover:bg-gray-700 dark:radix-state-open:bg-gray-700"
+        className="group flex cursor-pointer items-center gap-1 rounded-xl px-3 py-2 text-lg font-medium border border-blue-200 dark:border-pink-700 hover:bg-blue-50 radix-state-open:bg-blue-50 dark:hover:bg-pink-700 dark:radix-state-open:bg-pink-700"
         // type="button"
       >
         <div>

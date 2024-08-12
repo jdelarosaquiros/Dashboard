@@ -43,20 +43,20 @@ function Data() {
       className="w-full md:min-h-[271px]"
       ref={dataTabRef}
     >
-      <div className="flex flex-col gap-3 text-sm text-black dark:text-gray-50">
-        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-gray-600">
+      <div className="flex flex-col gap-3 text-sm text-white dark:text-gray-50">
+        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-pink-600">
           <ImportConversations />
         </div>
-        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-gray-600">
+        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-pink-600">
           <SharedLinks />
         </div>
-        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-gray-600">
+        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-pink-600">
           <RevokeKeysButton all={true} />
         </div>
-        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-gray-600">
+        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-pink-600">
           <DeleteCacheButton />
         </div>
-        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-gray-600">
+        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-pink-600">
           <ClearChatsButton
             confirmClear={confirmClearConvos}
             onClick={clearConvos}
