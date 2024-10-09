@@ -17,6 +17,7 @@ type SelectDropDownProps = {
   showAbove?: boolean;
   showLabel?: boolean;
   iconSide?: 'left' | 'right';
+  endpoint?: string;
   renderOption?: () => React.ReactNode;
 };
 
@@ -28,6 +29,7 @@ function SelectDropDownPop({
   showAbove = false,
   showLabel = true,
   emptyTitle = false,
+  endpoint = '',
 }: SelectDropDownProps) {
   const localize = useLocalize();
   const transitionProps = { className: 'top-full mt-3' };
@@ -119,6 +121,7 @@ function SelectDropDownPop({
                     value={option}
                     selected={!!(value && value === option)}
                     onClick={() => setValue(option)}
+                    endpoint={endpoint}
                   />
                 );
               })}

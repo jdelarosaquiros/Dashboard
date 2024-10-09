@@ -1,12 +1,12 @@
 import { useRecoilState } from 'recoil';
-import { Settings2 } from 'lucide-react';
+import { Settings2, ShieldCheck } from 'lucide-react';
 import { Root, Anchor } from '@radix-ui/react-popover';
 import { useState, useEffect, useMemo } from 'react';
 import { tPresetUpdateSchema, EModelEndpoint } from 'librechat-data-provider';
 import type { TPreset, TInterfaceConfig } from 'librechat-data-provider';
 import { EndpointSettings, SaveAsPresetDialog, AlternativeSettings } from '~/components/Endpoints';
 import { ModelSelect } from '~/components/Input/ModelSelect';
-import { PluginStoreDialog } from '~/components';
+import { PluginStoreDialog, AssessmentDialog } from '~/components';
 import OptionsPopover from './OptionsPopover';
 import PopoverButtons from './PopoverButtons';
 import { useSetIndexOptions } from '~/hooks';
@@ -24,6 +24,10 @@ export default function HeaderOptions({
   const [showPluginStoreDialog, setShowPluginStoreDialog] = useRecoilState(
     store.showPluginStoreDialog,
   );
+  const [showTrustAssesmentDialog, setShowTrustAssesmentDialog] = useRecoilState(
+    store.showTrustAssesmentDialog,
+  );
+  const [showAssessmentDialog, setShowAssessmentDialog] = useState<boolean>(false);
 
   const { showPopover, conversation, latestMessage, setShowPopover, setShowBingToneSetting } =
     useChatContext();
@@ -95,6 +99,17 @@ export default function HeaderOptions({
                   <Settings2 className="w-4 text-gray-600 dark:text-white" />
                 </Button>
               )}
+              <Button
+                type="button"
+                className={cn(
+                  cardStyle,
+                  'z-50 flex h-[40px] min-w-4 flex-none items-center justify-center px-3 focus:ring-0 focus:ring-offset-0',
+                  'hover:bg-blue-50 radix-state-open:bg-blue-50 dark:hover:bg-pink-700 dark:radix-state-open:bg-pink-700',
+                )}
+                onClick={() => setShowAssessmentDialog(true)}
+              >
+                <ShieldCheck className="w-4 text-gray-600 dark:text-white" />
+              </Button>
             </div>
             {interfaceConfig?.parameters && (
               <OptionsPopover
@@ -123,6 +138,13 @@ export default function HeaderOptions({
                     ...conversation,
                   }) as TPreset
                 }
+              />
+            )}
+            {interfaceConfig?.parameters && (
+              <AssessmentDialog
+                endpoint={endpoint}
+                isOpen={showAssessmentDialog}
+                setIsOpen={setShowAssessmentDialog}
               />
             )}
             {interfaceConfig?.parameters && (

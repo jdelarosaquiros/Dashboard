@@ -440,6 +440,7 @@ export default {
     'La clé fournie pour {0} a expiré à {1}. Veuillez fournir une clé et réessayer.',
   com_files_no_results: 'Aucun résultat.',
   com_files_filter: 'Filtrer les fichiers...',
+  com_date_filter: 'Filtrer les dates...',
   com_files_number_selected: '{0} sur {1} fichier(s) sélectionné(s)',
   com_sidepanel_select_assistant: 'Sélectionner un assistant',
   com_sidepanel_parameters: 'Paramètres',
@@ -2158,6 +2159,10 @@ export const comparisons = {
   com_files_filter: {
     english: 'Filter files...',
     translated: 'Filtrer les fichiers...',
+  },
+  com_date_filter: {
+    english: 'Filter dates...',
+    translated: 'Filtrer les dates...',
   },
   com_files_number_selected: {
     english: '{0} of {1} file(s) selected',

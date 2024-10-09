@@ -12,6 +12,7 @@ export default {
     'Provided key for {0} expired at {1}. Please provide a new key and try again.',
   com_files_no_results: 'No results.',
   com_files_filter: 'Filter files...',
+  com_date_filter: 'Filter dates...',
   com_files_number_selected: '{0} of {1} file(s) selected',
   com_sidepanel_select_assistant: 'Select an Assistant',
   com_sidepanel_parameters: 'Parameters',

@@ -36,6 +36,7 @@ export enum QueryKeys {
   categories = 'categories',
   randomPrompts = 'randomPrompts',
   roles = 'roles',
+  trustAssesment = 'trustAssesment',
 }
 
 export enum MutationKeys {

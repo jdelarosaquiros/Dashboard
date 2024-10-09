@@ -157,6 +157,15 @@ export const getAvailablePlugins = (): Promise<s.TPlugin[]> => {
   return request.get(endpoints.plugins());
 };
 
+// Get string from endpoints.trust
+export const getTrustAssesment = (endpoint: string): Promise<s.TResult> => {
+  return request.get(endpoints.trust(endpoint));
+};
+
+// export const assessEndpoint = (endpoint: string): Promise<s.TResult> => {
+//   return request.post(endpoints.trust(endpoint));
+// };
+
 export const updateUserPlugins = (payload: t.TUpdateUserPlugins) => {
   return request.post(endpoints.userPlugins(), payload);
 };

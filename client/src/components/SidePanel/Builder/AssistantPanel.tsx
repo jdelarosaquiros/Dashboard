@@ -30,7 +30,7 @@ import { Panel } from '~/common';
 
 const labelClass = 'mb-2 block text-xs font-bold text-gray-700 dark:text-gray-400';
 const inputClass =
-  'focus:shadow-outline w-full appearance-none rounded-md border px-3 py-2 text-sm leading-tight text-gray-700 dark:text-white shadow focus:border-green-500 focus:outline-none focus:ring-0 dark:bg-gray-800 dark:border-pink-700/80';
+  'focus:shadow-outline w-full appearance-none rounded-md border px-3 py-2 text-sm leading-tight text-gray-700 dark:text-white shadow focus:border-pink-500 focus:outline-none focus:ring-0 dark:bg-gray-800 dark:border-pink-700/80';
 
 export default function AssistantPanel({
   // index = 0,
@@ -214,7 +214,7 @@ export default function AssistantPanel({
           {/* Select Button */}
           {assistant_id && (
             <button
-              className="btn btn-primary focus:shadow-outline mx-2 mt-1 h-[40px] rounded bg-green-500 px-4 py-2 font-semibold text-white hover:bg-green-400 focus:border-green-500 focus:outline-none focus:ring-0"
+              className="btn btn-primary focus:shadow-outline mx-2 mt-1 h-[40px] rounded bg-pink-500 px-4 py-2 font-semibold text-white hover:bg-pink-400 focus:border-pink-500 focus:outline-none focus:ring-0"
               type="button"
               disabled={!assistant_id}
               onClick={(e) => {
@@ -297,7 +297,7 @@ export default function AssistantPanel({
                   {...field}
                   value={field.value ?? ''}
                   {...{ max: 32768 }}
-                  className="focus:shadow-outline min-h-[150px] w-full resize-none resize-y appearance-none rounded-md border px-3 py-2 text-sm leading-tight text-gray-700 shadow focus:border-green-500 focus:outline-none focus:ring-0 dark:border-pink-700/80 dark:bg-gray-800 dark:text-white"
+                  className="focus:shadow-outline min-h-[150px] w-full resize-none resize-y appearance-none rounded-md border px-3 py-2 text-sm leading-tight text-gray-700 shadow focus:border-pink-500 focus:outline-none focus:ring-0 dark:border-pink-700/80 dark:bg-gray-800 dark:text-white"
                   id="instructions"
                   placeholder={localize('com_assistants_instructions_placeholder')}
                   rows={3}
@@ -431,7 +431,7 @@ export default function AssistantPanel({
             )}
             {/* Submit Button */}
             <button
-              className="btn btn-primary focus:shadow-outline flex w-[90px] items-center justify-center px-4 py-2 font-semibold text-white hover:bg-green-600 focus:border-green-500"
+              className="btn btn-primary focus:shadow-outline flex w-[90px] items-center justify-center px-4 py-2 font-semibold text-white hover:bg-pink-600 focus:border-pink-500"
               type="submit"
             >
               {create.isLoading || update.isLoading ? (

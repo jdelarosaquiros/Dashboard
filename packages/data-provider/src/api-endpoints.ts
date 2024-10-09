@@ -188,3 +188,5 @@ export const roles = () => '/api/roles';
 export const getRole = (roleName: string) => `${roles()}/${roleName.toLowerCase()}`;
 export const updatePromptPermissions = (roleName: string) =>
   `${roles()}/${roleName.toLowerCase()}/prompts`;
+
+export const trust = (endpoint: string) => `/api/trust?endpoint=${endpoint}`;

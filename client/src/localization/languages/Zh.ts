@@ -5,6 +5,7 @@
 export default {
   com_files_no_results: '无结果。',
   com_files_filter: '筛选文件...',
+  com_date_filter: '过滤日期...',
   com_files_number_selected: '已选择 {0} 个文件（共 {1} 个文件）',
   com_sidepanel_select_assistant: '选择助手',
   com_sidepanel_assistant_builder: '助手生成器',
@@ -548,6 +549,10 @@ export const comparisons = {
   com_files_filter: {
     english: 'Filter files...',
     translated: '筛选文件...',
+  },
+  com_date_filter: {
+    english: 'Filter dates...',
+    translated: '过滤日期...',
   },
   com_files_number_selected: {
     english: '{0} of {1} file(s) selected',

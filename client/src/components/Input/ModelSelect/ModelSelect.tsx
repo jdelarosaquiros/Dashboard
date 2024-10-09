@@ -38,6 +38,7 @@ export default function ModelSelect({
     return null;
   }
 
+  // Can add more props here like endpoint of model, and pass it to dropdown menu component
   return (
     <OptionComponent
       conversation={conversation}
@@ -45,6 +46,7 @@ export default function ModelSelect({
       models={models}
       showAbove={showAbove}
       popover={popover}
+      endpoint={endpoint}
     />
   );
 }

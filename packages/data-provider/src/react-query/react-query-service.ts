@@ -394,6 +394,36 @@ export const useAvailablePluginsQuery = <TData = s.TPlugin[]>(
   );
 };
 
+/* Get data from:
+export const getTrustAssesment = (): Promise<string> => {
+  return request.get(endpoints.trust());
+};
+*/
+// export const useTrustAssesment =  (
+//   config?: UseQueryOptions<string>,
+// ): QueryObserverResult<number> => {
+//   return useQuery<string>([QueryKeys.trustAssesment], () => dataService.getTrustAssesment(), {
+//     refetchOnWindowFocus: false,
+//     refetchOnReconnect: false,
+//     refetchOnMount: false,
+//     ...config,
+//   });
+// };
+export const useTrustAssessment = <TData = s.TResult>(
+  endpoint: string,
+): QueryObserverResult<TData> => {
+  return useQuery<s.TResult, unknown, TData>(
+    [QueryKeys.trustAssesment],
+    () => dataService.getTrustAssesment(endpoint),
+    {
+      refetchOnWindowFocus: false,
+      refetchOnReconnect: false,
+      refetchOnMount: false,
+    },
+  );
+};
+
+
 export const useUpdateUserPluginsMutation = (): UseMutationResult<
   t.TUser,
   unknown,

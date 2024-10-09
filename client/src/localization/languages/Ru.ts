@@ -428,6 +428,7 @@ export default {
     'Предоставленный ключ для {0} истек {1}. Пожалуйста, укажите новый ключ и повторите попытку.',
   com_files_no_results: 'Нет результатов',
   com_files_filter: 'Фильтр файлов',
+  com_date_filter: 'Дата фильтра',
   com_files_number_selected: 'Выбрано {0} из {1} файл(а/ов)',
   com_sidepanel_parameters: 'Параметры',
   com_sidepanel_hide_panel: 'Скрыть панель',
@@ -2131,6 +2132,10 @@ export const comparisons = {
   com_files_filter: {
     english: 'Filter files...',
     translated: 'Фильтр файлов',
+  },
+  com_date_filter: {
+    english: 'Filter dates...',
+    translated: 'Дата фильтра',
   },
   com_files_number_selected: {
     english: '{0} of {1} file(s) selected',

@@ -321,6 +321,7 @@ export default {
   com_error_expired_user_key: '提供給 {0} 的金鑰已於 {1} 到期。請提供一個新的金鑰並重試。',
   com_files_no_results: '沒有結果。',
   com_files_filter: '篩選檔案...',
+  com_date_filter: '過濾日期...',
   com_files_number_selected: '已選取 {0} 個檔案，共 {1} 個檔案',
   com_sidepanel_select_assistant: '選擇一位助理',
   com_sidepanel_parameters: '參數',
@@ -1778,6 +1779,10 @@ export const comparisons = {
   com_files_filter: {
     english: 'Filter files...',
     translated: '篩選檔案...',
+  },
+  com_date_filter: {
+    english: 'Filter dates...',
+    translated: '過濾日期...',
   },
   com_files_number_selected: {
     english: '{0} of {1} file(s) selected',

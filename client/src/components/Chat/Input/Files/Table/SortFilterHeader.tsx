@@ -44,7 +44,7 @@ export function SortFilterHeader<TData, TValue>({
             {column.getIsFiltered() ? (
               <ListFilter className="icon-sm text-muted-foreground/70 ml-2" />
             ) : (
-              <ListFilter className="icon-sm ml-2 opacity-30" />
+              <ListFilter className="icon-sm ml-2" />
             )}
             {column.getIsSorted() === 'desc' ? (
               <ArrowDownIcon className="icon-sm ml-2" />
@@ -101,7 +101,7 @@ export function SortFilterHeader<TData, TValue>({
               className={
                 column.getIsFiltered()
                   ? 'cursor-pointer dark:text-white dark:hover:bg-pink-700'
-                  : 'pointer-events-none opacity-30'
+                  : 'pointer-events-none'
               }
               onClick={() => {
                 column.setFilterValue(undefined);

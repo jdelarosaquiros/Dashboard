@@ -192,7 +192,7 @@ const EditPresetDialog = ({
             </DialogButton>
             <DialogClose
               onClick={submitPreset}
-              className="ml-2 bg-green-500 text-white hover:bg-green-600 dark:hover:bg-green-600"
+              className="ml-2 bg-pink-500 text-white hover:bg-pink-600 dark:hover:bg-pink-600"
             >
               {localize('com_ui_save')}
             </DialogClose>

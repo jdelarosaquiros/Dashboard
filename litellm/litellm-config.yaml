@@ -1,12 +1,17 @@
 model_list:
-  - model_name: Llama 3.1
+  # - model_name: General Model
+  #   litellm_params:
+  #     model: openai/NousResearch/Meta-Llama-3.1-8B-Instruct
+  #     api_base: http://149.165.173.177:80/v1
+  #     api_key: "DIGLoM2l3W9vFFGJ95jS2dOS+ab4Rkfmjb2sj7kDXHXilOFNPIA697pABNEsNDTdfXZg3bpCrSA+a85LDb67HhTZ4qmCSLuk3ZTE2sE3JSk="
+  - model_name: General Model
     litellm_params:
-      model: openai/NousResearch/Meta-Llama-3-8B-Instruct
-      api_base: http://149.165.173.177:80/v1
-      api_key: "DIGLoM2l3W9vFFGJ95jS2dOS+ab4Rkfmjb2sj7kDXHXilOFNPIA697pABNEsNDTdfXZg3bpCrSA+a85LDb67HhTZ4qmCSLuk3ZTE2sE3JSk="
-  - model_name: Domain Specific
+      model: openai/meta-llama/Llama-3.2-11B-Vision-Instruct
+      api_base: http://149.165.174.45:80/v1
+      api_key: "EMPTY"
+  - model_name: Medical Domain Model
     litellm_params:
-      model: openai/NousResearch/Meta-Llama-3-8B-Instruct # openai/Henrychur/MMed-Llama-3-8B 
+      model: openai/NousResearch/Meta-Llama-3.1-8B-Instruct # openai/Henrychur/MMed-Llama-3-8B 
       api_base: http://149.165.173.177:80/v1 # http://149.165.154.50:80/v1
       api_key: "DIGLoM2l3W9vFFGJ95jS2dOS+ab4Rkfmjb2sj7kDXHXilOFNPIA697pABNEsNDTdfXZg3bpCrSA+a85LDb67HhTZ4qmCSLuk3ZTE2sE3JSk="
 general_settings:

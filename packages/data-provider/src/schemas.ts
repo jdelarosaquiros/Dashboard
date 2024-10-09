@@ -187,6 +187,20 @@ export const tPluginSchema = z.object({
 
 export type TPlugin = z.infer<typeof tPluginSchema>;
 
+// export const tResultItemSchema = z.object({
+//   time: z.string(),
+//   results: z.number(),
+// });
+
+// export type TResultItem = z.infer<typeof tResultItemSchema>;
+
+export const tResultSchema = z.object({
+  columns: z.array(z.string()).default([]),
+  values: z.array(z.array(z.unknown())).default([]),
+});
+
+export type TResult = z.infer<typeof tResultSchema>;
+
 export type TInput = {
   inputStr: string;
 };

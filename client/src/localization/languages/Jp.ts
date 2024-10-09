@@ -11,6 +11,7 @@ export default {
     '{0}の提供されたキーは{1}で期限切れです。キーを入力して再試行してください。',
   com_files_no_results: '結果がありません。',
   com_files_filter: 'ファイルをフィルタリング...',
+  com_date_filter: '日付をフィルタリング...',
   com_files_number_selected: '{0} of {1} ファイルが選択されました',
   com_sidepanel_select_assistant: 'Assistantを選択',
   com_sidepanel_parameters: 'パラメータ',
@@ -602,6 +603,10 @@ export const comparisons = {
   com_files_filter: {
     english: 'Filter files...',
     translated: 'ファイルをフィルタリング...',
+  },
+  com_date_filter: {
+    english: 'Filter dates...',
+    translated: '日付をフィルタリング...',
   },
   com_files_number_selected: {
     english: '{0} of {1} file(s) selected',

@@ -5,6 +5,7 @@
 export default {
   com_files_no_results: 'Nenhum resultado.',
   com_files_filter: 'Filtrar arquivos...',
+  com_date_filter: 'Filtrar datas...',
   com_files_number_selected: '{0} de {1} arquivo(s) selecionado(s)',
   com_sidepanel_select_assistant: 'Selecionar um Assistente',
   com_sidepanel_assistant_builder: 'Construtor de Assistente',
@@ -484,6 +485,10 @@ export const comparisons = {
   com_files_filter: {
     english: 'Filter files...',
     translated: 'Filtrar arquivos...',
+  },
+  com_date_filter: {
+    english: 'Filter dates...',
+    translated: 'Filtrar datas...',
   },
   com_files_number_selected: {
     english: '{0} of {1} file(s) selected',

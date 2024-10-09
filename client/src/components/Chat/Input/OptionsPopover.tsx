@@ -66,7 +66,7 @@ export default function OptionsPopover({
               {presetsDisabled ? null : (
                 <Button
                   type="button"
-                  className="h-auto w-[150px] justify-start rounded-md border border-gray-300/50 bg-transparent px-2 py-1 text-xs font-medium font-normal text-white hover:bg-gray-100 hover:text-white focus:ring-1 focus:ring-green-500/90 dark:border-pink-500/50 dark:bg-transparent dark:text-white dark:hover:bg-pink-600 dark:focus:ring-pink-600"
+                  className="h-auto w-[150px] justify-start rounded-md border border-gray-300/50 bg-transparent px-2 py-1 text-xs font-medium font-normal text-white hover:bg-gray-100 hover:text-white focus:ring-1 focus:ring-pink-500/90 dark:border-pink-500/50 dark:bg-transparent dark:text-white dark:hover:bg-pink-600 dark:focus:ring-pink-600"
                   onClick={saveAsPreset}
                 >
                   <Save className="mr-1 w-[14px]" />

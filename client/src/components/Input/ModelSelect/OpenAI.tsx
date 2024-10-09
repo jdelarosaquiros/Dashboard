@@ -8,8 +8,10 @@ export default function OpenAI({
   models,
   showAbove = true,
   popover = false,
+  endpoint = '',
 }: TModelSelectProps) {
   const Menu = popover ? SelectDropDownPop : SelectDropDown;
+  endpoint = "45%";
   return (
     <Menu
       value={conversation?.model ?? ''}
@@ -21,6 +23,9 @@ export default function OpenAI({
         cardStyle,
         'min-w-48 z-50 flex h-[40px] w-48 flex-none items-center justify-center px-4 hover:cursor-pointer',
       )}
+      endpoint={endpoint}
     />
   );
 }
+// Optional props
+// endpoint = '',

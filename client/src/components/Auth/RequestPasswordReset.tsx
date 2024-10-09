@@ -10,7 +10,7 @@ import { useLocalize } from '~/hooks';
 const BodyTextWrapper: FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <div
-      className="relative mt-4 rounded border border-green-400 bg-green-100 px-4 py-3 text-green-700 dark:bg-green-900 dark:text-white"
+      className="relative mt-4 rounded border border-pink-400 bg-pink-100 px-4 py-3 text-pink-700 dark:bg-pink-900 dark:text-white"
       role="alert"
     >
       {children}
@@ -129,7 +129,7 @@ function RequestPasswordReset() {
           {localize('com_auth_continue')}
         </button>
         <div className="mt-4 flex justify-center">
-          <a href="/login" className="text-sm text-green-500">
+          <a href="/login" className="text-sm text-pink-500">
             {localize('com_auth_back_to_login')}
           </a>
         </div>

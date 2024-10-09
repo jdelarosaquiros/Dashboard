@@ -321,6 +321,7 @@ export default {
     '{0}에 대한 키가 {1}에 만료되었습니다. 새 키를 제공하고 다시 시도해주세요.',
   com_files_no_results: '결과가 없습니다.',
   com_files_filter: '파일 필터링...',
+  com_date_filter: '날짜 필터링...',
   com_files_number_selected: '{0}개의 파일({1}개 중)이 선택되었습니다',
   com_sidepanel_select_assistant: '어시스턴트 선택',
   com_sidepanel_parameters: '매개변수',
@@ -1754,6 +1755,10 @@ export const comparisons = {
   com_files_filter: {
     english: 'Filter files...',
     translated: '파일 필터링...',
+  },
+  com_date_filter: {
+    english: 'Filter dates...',
+    translated: '날짜 필터링...',
   },
   com_files_number_selected: {
     english: '{0} of {1} file(s) selected',

@@ -21,6 +21,7 @@ const staticRoute = require('./static');
 const share = require('./share');
 const categories = require('./categories');
 const roles = require('./roles');
+const trust = require('./trust');
 
 module.exports = {
   search,
@@ -46,4 +47,5 @@ module.exports = {
   share,
   categories,
   roles,
+  trust,
 };

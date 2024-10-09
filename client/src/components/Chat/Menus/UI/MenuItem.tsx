@@ -1,5 +1,6 @@
 import type { FC } from 'react';
 import { cn } from '~/utils';
+import { useTrustAssessment } from 'librechat-data-provider/react-query';
 
 type MenuItemProps = {
   title: string;
@@ -13,6 +14,7 @@ type MenuItemProps = {
   icon?: React.ReactNode;
   className?: string;
   textClassName?: string;
+  endpoint?: string;
   // hoverContent?: string;
 } & Record<string, unknown>;
 
@@ -28,8 +30,11 @@ const MenuItem: FC<MenuItemProps> = ({
   textClassName = '',
   children,
   onClick,
+  endpoint = '',
   ...rest
 }) => {
+  // const { data: results } = useTrustAssessment(); // Pass endpoint to get useTrustAssesment: searchEnabledQuery = useGetSearchEnabledQuery({ enabled: isAuthenticated });
+
   return (
     <div
       role="menuitem"
@@ -53,6 +58,7 @@ const MenuItem: FC<MenuItemProps> = ({
         </div>
         <div className="flex items-center gap-2">
           {children}
+          {/* <div className="text-token-text-tertiary">{results?.avgScore}</div> */}
           {selected && (
             <svg
               width="24"

@@ -56,7 +56,7 @@ export default function ChatGroupItem({
         snippet={group.oneliner ? group.oneliner : group?.productionPrompt?.prompt ?? ''}
       >
         <div className="flex flex-row items-center gap-2">
-          {groupIsGlobal && <EarthIcon className="icon-md text-green-400" />}
+          {groupIsGlobal && <EarthIcon className="icon-md text-pink-400" />}
           <DropdownMenu modal={false}>
             <DropdownMenuTrigger asChild>
               <Button

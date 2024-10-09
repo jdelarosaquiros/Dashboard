@@ -121,8 +121,8 @@ function Avatar() {
             )}
             <button
               className={cn(
-                'mt-4 rounded px-4 py-2 text-white transition-colors hover:bg-green-600 hover:text-gray-100',
-                isUploading ? 'cursor-not-allowed bg-green-600' : 'bg-green-500',
+                'mt-4 rounded px-4 py-2 text-white transition-colors hover:bg-pink-600 hover:text-gray-100',
+                isUploading ? 'cursor-not-allowed bg-pink-600' : 'bg-pink-500',
               )}
               onClick={handleUpload}
               disabled={isUploading}

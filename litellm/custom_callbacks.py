@@ -82,6 +82,9 @@ class MyCustomHandler(CustomLogger): # https://docs.litellm.ai/docs/observabilit
         # data.pop("extra_body")
         # raise ValueError(f"LLM REQUEST:\n{data}")
 
+        if 'rag' in data.get('extra_body', {}):        
+        # if data.get("rag"):
+            raise ValueError(f"LLM REQUEST:\n{data}")
 
 
         message_data: dict = data.get("messages")[-1] if len(data.get("messages")) > 0 else None

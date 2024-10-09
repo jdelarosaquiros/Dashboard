@@ -339,6 +339,7 @@ export default {
     'انتهت صلاحية المفتاح المقدم لـ {0} في {1}. يرجى تقديم مفتاح وحاول مرة أخرى.',
   com_files_no_results: 'لا توجد نتائج.',
   com_files_filter: 'فلترة الملفات...',
+  com_date_filter: 'تصفية التاريخ...',
   com_files_number_selected: 'تم اختيار {0} من أصل {1} ملف(ملفات)',
   com_sidepanel_select_assistant: 'اختر مساعدًا',
   com_sidepanel_parameters: 'معلمات',
@@ -1804,6 +1805,10 @@ export const comparisons = {
   com_files_filter: {
     english: 'Filter files...',
     translated: 'فلترة الملفات...',
+  },
+  com_date_filter: {
+    english: 'Filter dates...',
+    translated: 'تصفية التاريخ...',
   },
   com_files_number_selected: {
     english: '{0} of {1} file(s) selected',

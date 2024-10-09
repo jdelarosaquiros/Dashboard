@@ -191,6 +191,7 @@ export type TModels = {
   models: string[];
   showAbove?: boolean;
   popover?: boolean;
+  endpoint?: string; // Added this line
 };
 
 export type TModelSelectProps = TSettingsProps & TModels;

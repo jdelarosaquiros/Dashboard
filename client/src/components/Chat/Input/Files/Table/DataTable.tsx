@@ -96,7 +96,7 @@ export default function DataTable<TData, TValue>({ columns, data }: DataTablePro
             deleteFiles({ files: filesToDelete as TFile[] });
             setRowSelection({});
           }}
-          className="ml-1 gap-2 dark:hover:bg-pink-850/25 sm:ml-0"
+          className="ml-1 gap-2 dark:hover:bg-pink-600 sm:ml-0"
           disabled={!table.getFilteredSelectedRowModel().rows.length || isDeleting}
         >
           {isDeleting ? (
@@ -180,7 +180,7 @@ export default function DataTable<TData, TValue>({ columns, data }: DataTablePro
                 <TableRow
                   key={row.id}
                   data-state={row.getIsSelected() && 'selected'}
-                  className="border-b border-black/10 text-left text-gray-600 dark:border-pink-600 dark:text-gray-300 [tr:last-child_&]:border-b-0"
+                  className="border-b border-black/10 text-left text-gray-600 dark:border-pink-600 dark:text-gray-20 [tr:last-child_&]:border-b-0"
                 >
                   {row.getVisibleCells().map((cell, index) => {
                     const maxWidth =

@@ -11,6 +11,10 @@ Write a prompt that is mindful of the nuances in the language with respect to it
   - **english**: Filter files...
   - **translated**: Filtrar arquivos...
 
+- **com_date_filter**:
+  - **english**: Filter dates...
+  - **translated**: Filtrar datas..
+
 - **com_files_number_selected**:
   - **english**: {0} of {1} file(s) selected
   - **translated**: {0} de {1} arquivo(s) selecionado(s)

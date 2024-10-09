@@ -12,6 +12,7 @@ export default {
     'La chiave fornita per {0} è scaduta il {1}. Fornisci una chiave e riprova.',
   com_files_no_results: 'Nessun risultato.',
   com_files_filter: 'Filtra file...',
+  com_date_filter: 'Filtra date...',
   com_files_number_selected: '{0} di {1} file selezionati',
   com_sidepanel_select_assistant: 'Seleziona un Assistente',
   com_sidepanel_parameters: 'Parametri',
@@ -634,6 +635,10 @@ export const comparisons = {
   com_files_filter: {
     english: 'Filter files...',
     translated: 'Filtra file...',
+  },
+  com_date_filter: {
+    english: 'Filter dates...',
+    translated: 'Filtrar fechas...',
   },
   com_files_number_selected: {
     english: '{0} of {1} file(s) selected',
