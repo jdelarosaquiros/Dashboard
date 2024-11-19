@@ -115,6 +115,7 @@ const ChatForm = ({ index = 0 }) => {
     required: true,
     onChange: (e) => {
       methods.setValue('text', e.target.value, { shouldValidate: true });
+      // methods.setValue('text', e.target.value);
     },
   });
 
@@ -197,6 +198,7 @@ const ChatForm = ({ index = 0 }) => {
                 <SendButton
                   ref={submitButtonRef}
                   control={methods.control}
+                  // files={files}
                   disabled={!!(filesLoading || isSubmitting || disableInputs)}
                 />
               )

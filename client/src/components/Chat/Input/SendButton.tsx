@@ -5,10 +5,13 @@ import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from '~/comp
 import { SendIcon } from '~/components/svg';
 import { useLocalize } from '~/hooks';
 import { cn } from '~/utils';
+// import type { Option, ExtendedFile } from 'client/src/common/types.ts';
+// import { useChatContext } from '~/Providers';
 
 type SendButtonProps = {
   disabled: boolean;
   control: Control<{ text: string }>;
+  // files: Map<string, ExtendedFile>;
 };
 
 const SubmitButton = React.memo(
@@ -44,6 +47,11 @@ const SubmitButton = React.memo(
 const SendButton = React.memo(
   forwardRef((props: SendButtonProps, ref: React.ForwardedRef<HTMLButtonElement>) => {
     const data = useWatch({ control: props.control });
+    // const { files } = useChatContext(); // Access 'files' from context
+    // const hasText = data?.text;
+    // const hasFiles = files && files.size > 0;
+    // const isDisabled = props.disabled || (!hasText && !hasFiles);
+    // return <SubmitButton ref={ref} disabled={isDisabled} />;
     return <SubmitButton ref={ref} disabled={props.disabled || !data?.text} />;
   }),
 );

@@ -18,6 +18,7 @@ export default function useSubmitMessage(helpers?: { clearDraft?: () => void }) 
   const { user } = useAuthContext();
   const methods = useChatFormContext();
   const { ask, index, getMessages, setMessages, latestMessage } = useChatContext();
+  // const { files, ask, index, getMessages, setMessages, latestMessage } = useChatContext();
   const { addedIndex, ask: askAdditional, conversation: addedConvo } = useAddedChatContext();
 
   const autoSendPrompts = useRecoilValue(store.autoSendPrompts);
@@ -26,6 +27,11 @@ export default function useSubmitMessage(helpers?: { clearDraft?: () => void }) 
 
   const submitMessage = useCallback(
     (data?: { text: string }) => {
+      // const hasFiles = files && files.size > 0;
+      // if (!data && !hasFiles) {
+      //   return console.warn('No data or files to submit');
+      // }
+      // const textData = data?.text || '';
       if (!data) {
         return console.warn('No data provided to submitMessage');
       }
